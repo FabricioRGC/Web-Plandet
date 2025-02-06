@@ -399,7 +399,7 @@
                                 <div class="card-body">
                                     <p class="text-center">Descargar</p>
                                     <a id="filedowload" href="#" download>
-                                        <p class="text-center" style="margin-top: 15px">Dowload.</p>
+                                        <p class="text-center" id="text" style="margin-top: 15px"></p>
                                     </a>                                
                                 </div>
                             </div>
@@ -430,31 +430,6 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card">
-            <div class="card-body ">
-                <?php
-                // Ruta del archivo PDF
-                $file_path = 'Archivos/Hary-Potter-y-la-piedra-filosofal.pdf';
-                // Verifica si el archivo PDF existe
-                if (file_exists($file_path)) {
-                    // Si el archivo existe, genera ambos enlaces
-                    echo '<p>Descargar Harry Potter (PDF)</p>';
-                    echo '<a href="' . $file_path . '" class="file-link" data-type="pdf" target="_blank">
-                            <img src="csv/noun-pdf-file-document-icon-2598608.svg" alt="PDF" class="file-icon">
-                        </a>';
-                    echo '<a href="' . $file_path . '" download>
-                            <p style="margin-top: -30px">Dowload.</p>
-                        </a>';
-                } else {
-                    // Si el archivo no existe, muestra un mensaje de error
-                    echo '<p>El archivo PDF no está disponible.</p>';
-                }
-                ?>
-            </div>
-        </div>
-    </div>
-
 
 
 
@@ -495,7 +470,8 @@
             tiempos: "Plazos de entrega detallados.",
             pasos: ["Paso 1: Presentar documentos.", "Paso 2: Revisión.", "Paso 3: Aprobación.", "Paso 4: Entrega."],
             recomendaciones: "Consejos para un trámite eficiente.",
-            archivo: "Harry-Potter-y-la-piedra-filosofal.pdf" // Se agrega el archivo dentro de la data
+            archivo: "Harry-Potter-y-la-piedra-filosofal.pdf", // Se agrega el archivo dentro de la data
+            nombre: "Harry Potter"
         },
         "Trámite 2": {
             titulo: "Trámite 1 de Geomática",
@@ -522,6 +498,7 @@
         document.getElementById("tiempos").innerText = data.tiempos;
         document.getElementById("recomendaciones").innerText = data.recomendaciones;
         document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
+        document.getElementById("text").innerText = data.nombre;
 
         const accordion = document.getElementById("pasosAccordion");
         accordion.innerHTML = data.pasos.map((paso, index) => `

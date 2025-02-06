@@ -62,15 +62,17 @@ const tramitesServiciosData = {
         tiempos: "Plazos de entrega detallados.",
         pasos: ["Paso 1: Presentar documentos.", "Paso 2: Revis,ión.", "Paso 3: Aprobación.", "Paso 4: Entrega."],
         recomendaciones: "Consejos para un trámite eficiente.",
-        archivo: "Harry-Potter-y-la-piedra-filosofal.pdf" // Se agrega el archivo dentro de la data
+        archivo: "Harry-Potter-y-la-piedra-filosofal.pdf",
+        nombre: "Harry-Potter-y-la-piedra-filosofal"
     },
     "Servicio 1": {
         titulo: "Servicio 1 de Geomática",
-        requerimientos: "Requisitos para el servicio.",
-        tiempos: "Tiempo estimado de atención.",
+        requerimientos: "Requisitos para el servicio./n 345",
+        tiempos: "Tiempo estimado de atención: 12 horas.",
         pasos: ["Paso 1: Solicitud.", "Paso 2: Evaluación.", "Paso 3: Ejecución.", "Paso 4: Finalización."],
         recomendaciones: "Consejos para optimizar el servicio.",
-        archivo: "Harry-Potter-y-la-piedra-filosofal.pdf" // Se agrega el archivo dentro de la data
+        archivo: "Harry-Potter-y-la-piedra-filosofal.pdf", 
+        nombre: "Harry-Potter-y-la-piedra-filosofal"
     }
 };
 
@@ -81,6 +83,7 @@ function showModal(tramite) {
     document.getElementById("tiempos").innerText = data.tiempos;
     document.getElementById("recomendaciones").innerText = data.recomendaciones;
     document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
+    document.getElementById("text").innerText = data.nombre;
     
     const accordion = document.getElementById("pasosAccordion");
     accordion.innerHTML = data.pasos.map((paso, index) => `
