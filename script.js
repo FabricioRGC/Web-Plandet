@@ -80,6 +80,7 @@ function showModal(tramite) {
     document.getElementById("requerimientos").innerText = data.requerimientos;
     document.getElementById("tiempos").innerText = data.tiempos;
     document.getElementById("recomendaciones").innerText = data.recomendaciones;
+    document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
     
     const accordion = document.getElementById("pasosAccordion");
     accordion.innerHTML = data.pasos.map((paso, index) => `
