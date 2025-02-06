@@ -395,36 +395,21 @@
                         <h4>Formatos</h4>
                         <div class="Formatos" id="visor"></div>
                         <div class="col-md-4">
-                        <div class="card">
-                        <div class="card-body ">
-                            <?php
-                            // Ruta del archivo PDF
-                            $file_path = 'Archivos/Harry-Potter-y-la-piedra-filosofal.pdf';
-                            // Verifica si el archivo PDF existe
-                            if (file_exists($file_path)) {
-                                // Si el archivo existe, genera ambos enlaces
-                                echo '<p>Descargar Harry Potter (PDF)</p>';
-                                echo '<a href="' . $file_path . '" class="file-link" data-type="pdf" target="_blank">
-                                        <img src="csv/noun-pdf-file-document-icon-2598608.svg" alt="PDF" class="file-icon">
-                                    </a>';
-                                echo '<a href="' . $file_path . '" download>
-                                        <p style="margin-top: -30px">Dowload.</p>
-                                    </a>';
-                            } else {
-                                // Si el archivo no existe, muestra un mensaje de error
-                                echo '<p>El archivo PDF no está disponible.</p>';
-                            }
-                            ?>
-                        </div>
-                    
-
-
-
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="text-center">Descargar</p>
+                                    <a id="filedowload" href="#" download>
+                                        <p class="text-center" style="margin-top: 15px">Dowload.</p>
+                                    </a>                                
+                                </div>
+                            </div>
+                        </div>     
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -450,7 +435,7 @@
             <div class="card-body ">
                 <?php
                 // Ruta del archivo PDF
-                $file_path = 'Archivos/Harry-Potter-y-la-piedra-filosofal.pdf';
+                $file_path = 'Archivos/Hary-Potter-y-la-piedra-filosofal.pdf';
                 // Verifica si el archivo PDF existe
                 if (file_exists($file_path)) {
                     // Si el archivo existe, genera ambos enlaces
@@ -469,39 +454,6 @@
             </div>
         </div>
     </div>
-
-
-
-<script>
-    const archivosPDF = {
-    "harry_potter": {
-        nombre: "Harry Potter y la piedra filosofal",
-        ruta: "C:\xampp\htdocs\2025-PLANDET\Pruevas-Web-Plandet\Archivos\Harry-Potter-y-la-piedra-filosofal.pdf"
-    },
-    "otro_libro": {
-        nombre: "Otro libro interesante",
-        ruta: "Archivos/otro-libro.pdf"
-    }
-};
-
-// Función para cargar el archivo dinámicamente
-function cargarArchivo(idArchivo) {
-    if (archivosPDF[idArchivo]) {
-        const archivo = archivosPDF[idArchivo];
-        document.getElementById("file-name").innerText = `Descargar ${archivo.nombre} (PDF)`;
-        document.getElementById("file-link").href = `href="archivo.ruta" class="file-link" data-type="pdf" target="_blank"`;
-        document.getElementById("file-download").href = archivo.ruta;
-    } else {
-        document.getElementById("file-name").innerText = "El archivo no está disponible.";
-        document.getElementById("file-link").style.display = "none";
-        document.getElementById("file-download").style.display = "none";
-    }
-}
-
-// Llamar a la función con un ID específico
-cargarArchivo("harry_potter");
-
-</script>
 
 
 
@@ -542,14 +494,24 @@ cargarArchivo("harry_potter");
             requerimientos: "Documentos necesarios para el trámite.",
             tiempos: "Plazos de entrega detallados.",
             pasos: ["Paso 1: Presentar documentos.", "Paso 2: Revisión.", "Paso 3: Aprobación.", "Paso 4: Entrega."],
-            recomendaciones: "Consejos para un trámite eficiente."
+            recomendaciones: "Consejos para un trámite eficiente.",
+            archivo: "Harry-Potter-y-la-piedra-filosofal.pdf" // Se agrega el archivo dentro de la data
+        },
+        "Trámite 2": {
+            titulo: "Trámite 1 de Geomática",
+            requerimientos: "Documentos necesarios para el trámite.",
+            tiempos: "Plazos de entrega detallados.",
+            pasos: ["Paso 1: Presentar documentos.", "Paso 2: Revisión.", "Paso 3: Aprobación.", "Paso 4: Entrega."],
+            recomendaciones: "Consejos para un trámite eficiente.",
+            archivo: "ElPrimerAmor.pdf" // Se agrega el archivo dentro de la data
         },
         "Servicio 1": {
             titulo: "Servicio 1 de Geomática",
             requerimientos: "Requisitos para el servicio.",
             tiempos: "Tiempo estimado de atención.",
             pasos: ["Paso 1: Solicitud.", "Paso 2: Evaluación.", "Paso 3: Ejecución.", "Paso 4: Finalización."],
-            recomendaciones: "Consejos para optimizar el servicio."
+            recomendaciones: "Consejos para optimizar el servicio.",
+            archivo: "Harry-Potter-y-la-piedra-filosofal.pdf" // Se agrega el archivo dentro de la data
         }
     };
 
@@ -559,7 +521,8 @@ cargarArchivo("harry_potter");
         document.getElementById("requerimientos").innerText = data.requerimientos;
         document.getElementById("tiempos").innerText = data.tiempos;
         document.getElementById("recomendaciones").innerText = data.recomendaciones;
-        
+        document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
+
         const accordion = document.getElementById("pasosAccordion");
         accordion.innerHTML = data.pasos.map((paso, index) => `
             <div class="accordion-item">
