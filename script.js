@@ -90,11 +90,9 @@ function showModal(tramite) {
     document.getElementById("text").innerText = data.nombre;
     document.getElementById('filedowload2').href = 'Archivos/' + data.archivo2;
     document.getElementById("text2").innerText = data.nombre2;
+    document.getElementById("dowload").innerText = "Descargar Formato";
     if(data.archivo2 != null){
-        document.getElementById("dowload").innerText = "Descargar Formato"
-    }
-    else{
-        document.getElementById("dowload").innerText = ""
+        document.getElementById("dowload2").innerText = "Descargar Formato";
     }
     
 
