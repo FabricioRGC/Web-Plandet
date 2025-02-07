@@ -397,9 +397,9 @@
                         <div class="col-md-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <p class="text-center">Descargar</p>
+                                    <p class="text-center" id="text"></p>
                                     <a id="filedowload" href="#" download>
-                                        <p class="text-center" id="text" style="margin-top: 15px"></p>
+                                        <p class="text-center" style="margin-top: 15px">Descargar</p>
                                     </a>                                
                                 </div>
                             </div>
