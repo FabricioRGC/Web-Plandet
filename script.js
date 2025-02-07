@@ -63,7 +63,9 @@ const tramitesServiciosData = {
         pasos: ["Paso 1: Presentar documentos.", "Paso 2: Revis,ión.", "Paso 3: Aprobación.", "Paso 4: Entrega."],
         recomendaciones: "Consejos para un trámite eficiente.",
         archivo: "Harry-Potter-y-la-piedra-filosofal.pdf",
-        nombre: "Harry-Potter-y-la-piedra-filosofal"
+        nombre: "Harry-Potter-y-la-piedra-filosofal",
+        archivo2: null, 
+        nombre2: null
     },
     "Servicio 1": {
         titulo: "Servicio 1 de Geomática",
@@ -72,7 +74,9 @@ const tramitesServiciosData = {
         pasos: ["Paso 1: Solicitud.", "Paso 2: Evaluación.", "Paso 3: Ejecución.", "Paso 4: Finalización."],
         recomendaciones: "Consejos para optimizar el servicio.",
         archivo: "Harry-Potter-y-la-piedra-filosofal.pdf", 
-        nombre: "Harry-Potter-y-la-piedra-filosofal"
+        nombre: "Harry-Potter-y-la-piedra-filosofal",
+        archivo2: "ElPrimerAmor.pdf", 
+        nombre2: "ElPrimerAmor"
     }
 };
 
@@ -84,6 +88,16 @@ function showModal(tramite) {
     document.getElementById("recomendaciones").innerText = data.recomendaciones;
     document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
     document.getElementById("text").innerText = data.nombre;
+    document.getElementById('filedowload2').href = 'Archivos/' + data.archivo2;
+    document.getElementById("text2").innerText = data.nombre2;
+    if(data.archivo2 != null){
+        document.getElementById("dowload").innerText = "Descargar Formato"
+    }
+    else{
+        document.getElementById("dowload").innerText = ""
+    }
+    
+
     
     const accordion = document.getElementById("pasosAccordion");
     accordion.innerHTML = data.pasos.map((paso, index) => `
