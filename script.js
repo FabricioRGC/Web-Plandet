@@ -94,6 +94,10 @@ function showModal(tramite) {
     if(data.archivo2 != null){
         document.getElementById("dowload2").innerText = "Descargar Formato";
     }
+    else{
+        document.getElementById("dowload2").innerText = "";
+
+    }
     
 
     
