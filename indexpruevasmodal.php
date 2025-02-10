@@ -139,7 +139,7 @@
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar">
+                    <div class="sidebar" style="background: linear-gradient(50deg, #123340, #65A693);">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>
                         <a href="javascript:void(0);" onclick="showContent('vision')">Visión</a>
@@ -179,32 +179,32 @@
                     <div class="row gy-4">
                         <div class="col-12 col-lg-12 justifi text-center">
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3" style="border: 1px solid #68A69B; background-color: #F2F2F2">
-                            <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(18, 51, 64, 0.72);"></i>
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2;">
+                            <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Consulta el estado de tus tramites">
                                 Mesa de partes
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3" style="border: 1px solid #68A69B; background-color: #F2F2F2">
-                            <i class="fas fa-phone me-3" style="font-size: 2rem; color:rgba(18, 51, 64, 0.72);"></i>
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                            <i class="fas fa-phone me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_contacto.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Contacto">
                                 Contacto
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3" style="border: 1px solid #68A69B; background-color: #F2F2F2">
-                            <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(18, 51, 64, 0.72);"></i>
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                            <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">
                                 Noticias
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3" style="border: 1px solid #68A69B; background-color: #F2F2F2">
-                            <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(18, 51, 64, 0.72);"></i>
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                            <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_equipo.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Conoce a nuestros miembros">
                                 Equipo
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3" style="border: 1px solid #68A69B; background-color: #F2F2F2">
-                            <i class="fas fa-map me-3" style="font-size: 2rem; color: rgba(18, 51, 64, 0.72);"></i>
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                            <i class="fas fa-map me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="http://200.233.44.151:82/visor/" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Visor MPT">
                                 Visor MPT
                             </a>
@@ -218,19 +218,19 @@
         <div class="container-xxl mt-3" style="padding-bottom: 30px; border-top: 1px solid #123340; border-bottom: 1px solid #123340">
             <h1 class="text-center mb-4" style="margin-top: 15px;">Trámites y Servicios</h1>
             <div class="text-center mb-3">
-                <button class="btn bg-white shadow mx-2" style="border: 1px solid #65A693; margin-bottom: 10px;" onclick="updateContent('gerencia1')">Subgerencia Geomática</button>
-                <button class="btn bg-white shadow mx-2" style="border: 1px solid #65A693; margin-bottom: 10px" onclick="updateContent('gerencia2')">Subgerencia Planificación</button>
-                <button class="btn bg-white shadow mx-2" style="border: 1px solid #65A693; margin-bottom: 10px" onclick="updateContent('gerencia3')">Subgerencia Titulación</button>
+                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px;" onclick="updateContent('gerencia1')">Subgerencia Geomática</button>
+                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px" onclick="updateContent('gerencia2')">Subgerencia Planificación</button>
+                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px" onclick="updateContent('gerencia3')">Subgerencia Titulación</button>
             </div>
             <div class="content-container">
                 <div class="description" id="description" style="background-color: #F2F2F2; border: 1px solid #123340">
                     <p>Seleccione una subgerencia para ver más detalles.</p>
                 </div>
-                <div class="list-container text-center" style="background-color: #68A69B; padding: 5px; border-radius: 10px;">
-                    <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Trámites</h4>
-                    <ul id="tramites-list" class="list-group mb-3" style="background-color: #F2F2F2;"></ul>
-                    <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Servicios</h4>
-                    <ul id="servicios-list" class="list-group" style="background-color: #F2F2F2;"></ul>
+                <div class="list-container text-center background-PLANDET" style="padding: 10px; border-radius: 10px;">
+                    <h4 class="btn-PLANDET" style="border-radius: 5px; padding: 2px;">Trámites</h4>
+                    <ul id="tramites-list" class="list-group mb-3"></ul>
+                    <h4 class="btn-PLANDET" style="border-radius: 5px; padding: 2px;">Servicios</h4>
+                    <ul id="servicios-list" class="list-group"></ul>
                 </div>
             </div>
         </div>
@@ -246,7 +246,7 @@
                         <p id="requerimientos"></p>
                         <h4>Tiempos de Entrega</h4>
                         <p id="tiempos"></p>
-                        <h4>Pasos a Seguir</h4>
+                        <h4>Procedimiento</h4>
                         <div class="accordion" id="pasosAccordion"></div>
                         <h4>Recomendaciones</h4>
                         <p id="recomendaciones"></p>
@@ -254,7 +254,7 @@
                         <div class="Formatos" id="visor"></div>
                         <div class="container-xxl">
                             <div class="row g-4 text-center">
-                                <div class="col-12 col-lg-4">
+                                <div id="f01" class="col-12 col-lg-4">
                                     <div class="border p-3">
                                         <p id="text" class="fw-bold"></p>
                                         <a id="filedowload" href="#" download>
@@ -262,7 +262,7 @@
                                         </a>  
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div id="f02" class="col-12 col-lg-4">
                                     <div class="border p-3">
                                         <p id="text2" class="fw-bold"></p>
                                         <a id="filedowload2" href="#" download>
@@ -270,7 +270,7 @@
                                         </a>  
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
+                                <div id="f03" class="col-12 col-lg-4">
                                     <div class="border p-3">
                                         <p id="text3" class="fw-bold"></p>
                                         <a id="filedowload3" href="#" download>

@@ -99,28 +99,26 @@ function showModal(tramite) {
     document.getElementById("text3").innerText = data.nombre3;
     if(data.archivo2 != null){
         document.getElementById("dowload2").innerText = "Descargar Formato";
+        document.getElementById("f02").classList.remove("display-nome-update");
     }
     else{
         document.getElementById("dowload2").innerText = "";
+        document.getElementById("f02").classList.add("display-nome-update");
     }
     if(data.archivo3 != null){
         document.getElementById("dowload3").innerText = "Descargar Formato";
+        document.getElementById("f03").classList.remove("display-nome-update");
     }
     else{
         document.getElementById("dowload3").innerText = "";
+        document.getElementById("f03").classList.add("display-nome-update");
     }
 
     const accordion = document.getElementById("pasosAccordion");
     accordion.innerHTML = data.pasos.map((paso, index) => `
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="heading${index}">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="true">
-                    ${paso.split(':')[0]}
-                </button>
-            </h2>
-            <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#pasosAccordion">
-                <div class="accordion-body">${paso.split(':')[1]}</div>
-            </div>
+        <div class="paso-item" style="margin-left: 20px">
+            <h5 class="paso-titulo">Paso ${index + 1}</h5>
+            <p class="paso-descripcion">${paso.split(':')[1]}</p>
         </div>
     `).join('');
     
@@ -129,8 +127,8 @@ function showModal(tramite) {
 
 function updateContent(gerencia) {
     document.getElementById("description").innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
-    document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `<li class="list-group-item"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
-    document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `<li class="list-group-item""><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
+    document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `<li class="background-PLANDET2 list-group-item border-0"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
+    document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `<li class="background-PLANDET2 list-group-item border-0"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
 }
 
 document.addEventListener("DOMContentLoaded", () => {

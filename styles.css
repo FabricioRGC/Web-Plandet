@@ -123,7 +123,7 @@
 }
 
 .custom-text-green{
-    color: #259978;
+    color:rgba(255, 255, 255, 0.72);;
 }
 
 .custom-box-green{
@@ -219,8 +219,8 @@
 }
 
 .list-group {
-    min-height: 160px;
-    max-height: 160px;
+    min-height: 150px;
+    max-height: 150px;
     overflow-y: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -282,4 +282,25 @@
     .list-container {
         width: 100%;
     }
+}
+
+.display-nome-update{
+    display: none;
+}
+
+.background-PLANDET{
+    background: linear-gradient(50deg, #123340, #65A693) !important;
+}
+
+.btn-PLANDET{
+    background: #123340 !important;
+    color: white !important;
+}
+
+.no-border {
+    border: none;
+}
+
+.background-PLANDET2{
+    background: rgba(255, 255, 255, 0.72)
 }
