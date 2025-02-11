@@ -159,7 +159,7 @@
 }
 
 .sidebar {
-    background-color: #123340;
+    background: linear-gradient(50deg, #123340, #65A693);
     height: 100%;
     padding: 20px;
     border-radius: 10px;

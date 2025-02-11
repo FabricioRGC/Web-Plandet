@@ -135,7 +135,7 @@
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="sidebar" style="background: linear-gradient(50deg, #123340, #65A693);">
+                    <div class="sidebar">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>
                         <a href="javascript:void(0);" onclick="showContent('vision')">Visión</a>
