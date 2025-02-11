@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="index.html#quienes-somos">Quienes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-offset" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>   
+                    <li class="nav-item"><a class="nav-link scroll-offset" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>                    
                     <li class="nav-item"><a class="nav-link" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#Contacto">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html">Noticias</a></li>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <main style="height: 87vh;">
+    <main style="height: 87vh; background: linear-gradient(50deg, #123340, #65A693);">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators" style=" bottom: -5px; z-index: 10; position: absolute;">
                 <div class="py-1 px-1 rounded-6" style="background-color: rgba(0, 0, 0, 0.473);">
@@ -59,7 +59,7 @@
                             <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
                                 <div class="card-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.msn.com/en-xl/lifestyle/shopping/mushroom-shaped-earbuds-based-on-popular-japanese-kinoko-no-yama-snacks-to-go-on-sale/ar-AA1k8r98?ocid=msedgdhp&pc=U531&cvid=029498f338fe4366b71cea0c21a3a9a2&ei=219">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -71,7 +71,7 @@
                             <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
                                 <div class="card-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.msn.com/en-us/news/technology/elon-musk-says-the-risk-of-advanced-ai-is-so-high-that-the-public-needs-to-know-why-openai-fired-sam-altman/ar-AA1kbZpi?cvid=dd06d8fb2f5144179d660d2744a74f5b&ocid=winp2fptaskbar&ei=3">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -83,7 +83,7 @@
                             <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
                                 <div class="card-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.msn.com/en-us/news/world/a-60-year-old-russian-tank-apparently-tried-attacking-the-ukrainian-marines-dnipro-bridgehead-the-tank-didn-t-survive/ar-AA1kcrpI?ocid=winp2fptaskbar&cvid=852c058a60854cd59f21ce6fcac3ec49&ei=372">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -92,10 +92,10 @@
                             </div>
                         </div>
                         <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
+                            <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0001.jpeg');">
                                 <div class="card-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.msn.com/en-us/sports/fifa-world-cup/latest-brazil-argentina-encounter-presents-a-chance-to-change-history/ar-AA1kcbIy?ocid=winp2fptaskbar&cvid=852c058a60854cd59f21ce6fcac3ec49&ei=378">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -104,10 +104,10 @@
                             </div>
                         </div>
                         <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
+                            <div  class="h-100 text-light news card d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0002.jpeg');">
                                 <div class="card-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.msn.com/en-us/weather/topstories/wildfire-from-interstate-crash-spreads-rapidly-over-mountains/ar-AA1kb42t?ocid=winp2fptaskbar&cvid=852c058a60854cd59f21ce6fcac3ec49&ei=379">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-solid fa-calendar"></i>12/12/2024</span>
