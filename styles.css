@@ -1,5 +1,5 @@
 .list-group-item a {
-    color: black !important;
+    color: white ;
     text-decoration: none !important;
 }
 
@@ -35,7 +35,7 @@
 
 @media (max-width: 530px) {
     .carousel-indicators{
-        display: none;
+        display: none !important;
     }
 }
 
@@ -201,12 +201,11 @@
 
 .list-group-item {
     border-radius: 5px;
+    border: 1px solid #123340 !important;
+    color: #ffffff !important;
     margin: 5px 0;
     transition: background-color 0.3s ease;
-}
-
-.list-group-item:hover {
-    background-color: #E9F7F6;
+    background-color: #123340 !important;
 }
 
 .description {
@@ -300,10 +299,6 @@
 
 .no-border {
     border: none;
-}
-
-.background-PLANDET2{
-    background: rgba(255, 255, 255, 0.72)
 }
 
 .border-gradient {

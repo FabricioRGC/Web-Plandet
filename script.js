@@ -127,8 +127,8 @@ function showModal(tramite) {
 
 function updateContent(gerencia) {
     document.getElementById("description").innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
-    document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `<li class="background-PLANDET2 list-group-item border-0"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
-    document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `<li class="background-PLANDET2 list-group-item border-0"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
+    document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `<li class="list-group-item" style="color:white;"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
+    document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `<li class="list-group-item"><a href="javascript:void(0);" onclick="showModal('${item}')">${item}</a></li>`).join('');
 }
 
 document.addEventListener("DOMContentLoaded", () => {
