@@ -24,13 +24,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link scroll-offset" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="index.html" id="visorDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Visor MPT</a>
-                        <ul class="dropdown-menu" aria-labelledby="visorDropdown">
-                            <li><a class="dropdown-item" href="index.html">Visita nuestro visor</a></li>
-                        </ul>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#quienes-somos">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link scroll-offset" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>   
+                    <li class="nav-item"><a class="nav-link" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html#Contacto">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="index.html">Noticias</a></li>
                 </ul>
@@ -163,7 +159,7 @@
             <div class="row">
                 <h2 class="fw-bold mb-4 text-center" style="padding-top: 15px">CONOCE PLANDET</h2>
                 <div class="col-12 col-lg-6 mb-4 d-lg-block">
-                    <div class="d-flex justify-content-center mb-3" style="border: 2px solid #123340; border-radius: 20px">
+                    <div class="d-flex justify-content-center mb-3 border-gradient">
                         <iframe 
                             src="https://www.google.com/maps?q=loc:-8.107384986498031,-79.03034909152134&z=17&output=embed" 
                             width="100%" 
@@ -179,31 +175,31 @@
                     <div class="row gy-4">
                         <div class="col-12 col-lg-12 justifi text-center">
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2;">
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid white; background-color: #F2F2F2;">
                             <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Consulta el estado de tus tramites">
                                 Mesa de partes
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid white; background-color: #F2F2F2">
                             <i class="fas fa-phone me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_contacto.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Contacto">
                                 Contacto
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid white; background-color: #F2F2F2">
                             <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">
                                 Noticias
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid white; background-color: #F2F2F2">
                             <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_equipo.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Conoce a nuestros miembros">
                                 Equipo
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid #68A69B; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center shadow p-3 background-PLANDET" style="border: 1px solid white; background-color: #F2F2F2">
                             <i class="fas fa-map me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="http://200.233.44.151:82/visor/" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Visor MPT">
                                 Visor MPT
@@ -227,10 +223,11 @@
                     <p>Seleccione una subgerencia para ver más detalles.</p>
                 </div>
                 <div class="list-container text-center background-PLANDET" style="padding: 10px; border-radius: 10px;">
-                    <h4 class="btn-PLANDET" style="border-radius: 5px; padding: 2px;">Trámites</h4>
+                    <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Trámites</h4>
                     <ul id="tramites-list" class="list-group mb-3"></ul>
-                    <h4 class="btn-PLANDET" style="border-radius: 5px; padding: 2px;">Servicios</h4>
+                    <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Servicios</h4>
                     <ul id="servicios-list" class="list-group"></ul>
+                </div>
                 </div>
             </div>
         </div>
@@ -313,7 +310,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

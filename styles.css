@@ -232,11 +232,12 @@
 
 .list-group::-webkit-scrollbar-track {
     background: #88bab2;
+    border-radius: 10px;
 }
 
 .list-group::-webkit-scrollbar-thumb {
     background: #123340;
-    border-radius: 10px;
+    border-radius: 10px !important;
 }
 
 .list-group::-webkit-scrollbar-thumb:hover {
@@ -303,4 +304,22 @@
 
 .background-PLANDET2{
     background: rgba(255, 255, 255, 0.72)
+}
+
+.border-gradient {
+    position: relative;
+    border-radius: 20px;
+    background: rgb(255, 255, 255); /* Ajusta según el fondo */
+}
+
+.border-gradient::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(50deg, #123340, #65A693);
+    border-radius: 22px; /* Ajusta para que se vea bien */
+    z-index: -1;
 }
