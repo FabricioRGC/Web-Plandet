@@ -39,6 +39,12 @@
     }
 }
 
+.carousel-item {
+    height: 100%; /* Asegura que cada item ocupe todo el alto */
+    background-size: cover;
+    background-position: center center;
+}
+
 .bg-image {
     background-position: center top !important;
     background-size: cover;
@@ -69,10 +75,6 @@
 .card2-body {
     position: absolute;
     z-index: 3;
-}
-
-.text-card-custom{
-    z-index: 5000;
 }
 
 .carousel-indicators [data-bs-target] {

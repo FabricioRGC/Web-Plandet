@@ -237,3 +237,4 @@ document.getElementById('imageModal').addEventListener('hidden.bs.modal', functi
 // Ocultar visor PDF por defecto
 PDFViewer.hideViewer();
 // //--------------------------------------------------------------------------------
+

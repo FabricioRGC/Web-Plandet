@@ -36,30 +36,24 @@
             </div>
         </div>
     </nav>
-    <main style="height: 87vh; background: linear-gradient(50deg, #123340, #65A693);">
+
+
+
+    
+    <main style="height: 100vh; background: linear-gradient(50deg, #123340, #65A693);">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-indicators" style=" bottom: -5px; z-index: 10; position: absolute;">
-                <div class="py-1 px-1 rounded-6" style="background-color: rgba(0, 0, 0, 0.473);">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" >
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="">
-                    </button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" class="">
-                    </button>
-                </div>
+            <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
+                <!-- Los botones de los indicadores se generarán aquí -->
             </div>
             <div class="w-100 h-100">
                 <div class="position-relative text-center w-100 h-100">
                     <div class="carousel-inner w-100 h-100">
+                        <!-- Los items del carrusel se generarán aquí -->
                         <div class="carousel-item active w-100 h-100">
-                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
+                            <div class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
                                 <div class="card2-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de más de 700 títulos por parte de nuestro alcalde.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -67,70 +61,119 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
-                                <div class="card2-body">
-                                    <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
-                                    </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
-                                <div class="card2-body">
-                                    <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
-                                    </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0001.jpeg');">
-                                <div class="card2-body text-card-custom">
-                                    <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Descubre mas sobre nosotros.</a>
-                                    </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item w-100 h-100">
-                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0002.jpeg');">
-                                <div class="card2-body">
-                                    <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Estamos en Av. España 793, Trujillo 13001.</a>
-                                    </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-solid fa-calendar"></i>12/12/2024</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Agrega más elementos del carrusel aquí -->
                     </div>
                 </div>
             </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" title="Previous">
-                    <i class="fa-solid fa-chevron-left text-bg-dark text-light py-3 px-3 rounded"></i>
-                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
-                    <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
-                    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" title="Previous">
+                <i class="fa-solid fa-chevron-left text-bg-dark text-light py-3 px-3 rounded"></i>
+                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
+                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
+                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </main>
+    <script>
+        // Datos del carrusel
+        const carouselData = [
+            {
+                estado: "active",
+                imagen: "pictures/picture0001.jpeg",
+                titulo: "Entrega de más de 700 títulos por parte de nuestro alcalde.",
+                enlace: "https://www.gob.pe/munitrujillo",
+                fecha: "12/12/2024",
+            },
+            {
+                estado: "active",
+                imagen: "pictures/picture0002.jpeg",
+                titulo: "Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.",
+                enlace: "https://www.gob.pe/munitrujillo",
+                fecha: "12/12/2024",
+            },
+            {
+                estado: "active",
+                imagen: "pictures/picture0003.jpeg",
+                titulo: "Firma de Títulos de propiedad por parte de las familias formalizadas en Alto Trujillo.",
+                enlace: "https://www.gob.pe/munitrujillo",
+                fecha: "12/12/2024",
+            },
+            {
+                estado: "active",
+                imagen: "pictures/picture-carrusel0001.jpeg",
+                titulo: "Descubre más sobre nosotros.",
+                enlace: "https://www.gob.pe/munitrujillo",
+                fecha: "12/12/2024",
+            },
+            {
+                estado: "active",
+                imagen: "pictures/picture-carrusel0002.jpeg",
+                titulo: "Estamos en Av. España 793, Trujillo 13001.",
+                enlace: "https://www.gob.pe/munitrujillo",
+                fecha: "12/12/2024",
+            }
+        ];
+    
+        function loadCarousel(data) {
+            const carouselInner = document.querySelector(".carousel-inner");
+            const indicators = document.querySelector(".carousel-indicators");
+    
+            // Limpiar contenido actual
+            carouselInner.innerHTML = "";
+            indicators.innerHTML = "";
+    
+            let activeSet = false; // Para asegurarse de que solo un elemento sea "active"
+            let index = 0; // Índice de elementos visibles en el carrusel
+    
+            data.forEach((item) => {
+                if (item.estado === "none") return; // Si es "none", no lo añadimos al carrusel
+    
+                // Crear el item del carrusel
+                const carouselItem = document.createElement("div");
+                carouselItem.className = `carousel-item ${item.estado === "active" && !activeSet ? "active" : ""}`;
+                activeSet = true;
+    
+                carouselItem.innerHTML = `
+                    <div class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('${item.imagen}');">
+                        <div class="card2-body">
+                            <h1 class="headlines">
+                                <a href="${item.enlace}" target="_blank">${item.titulo}</a>
+                            </h1>
+                            <div class="icons">
+                                <span class="icon"><i class="fa-regular fa-calendar"></i> ${item.fecha}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                carouselInner.appendChild(carouselItem);
+    
+                // Crear el indicador
+                const indicator = document.createElement("button");
+                indicator.type = "button";
+                indicator.dataset.bsTarget = "#carouselExampleIndicators";
+                indicator.dataset.bsSlideTo = index;
+                indicator.className = index === 0 ? "active" : ""; // Marcar el primer indicador como activo
+                indicator.setAttribute("aria-label", `Slide ${index + 1}`);
+                indicators.appendChild(indicator);
+    
+                // Incrementar el índice visible
+                index++;
+            });
+        }
+    
+        // Cargar los datos al carrusel
+        loadCarousel(carouselData);
+    
+        // Inicializar el carrusel de Bootstrap (agregar esta línea para habilitar la navegación)
+        const carouselElement = document.querySelector('#carouselExampleIndicators');
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 5000, // Intervalo entre slides
+            ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
+        });
+    </script>
     <section id="quienes-somos">
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
             <div class="row">
@@ -310,7 +353,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
