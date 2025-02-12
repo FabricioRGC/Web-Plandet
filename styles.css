@@ -75,6 +75,7 @@
 .card2-body {
     position: absolute;
     z-index: 3;
+    padding-bottom: 30px
 }
 
 .carousel-indicators [data-bs-target] {

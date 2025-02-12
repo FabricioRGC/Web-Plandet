@@ -78,44 +78,12 @@
         </div>
     </main>
     <script>
-        // Datos del carrusel
-        const carouselData = [
-            {
-                estado: "active",
-                imagen: "pictures/picture0001.jpeg",
-                titulo: "Entrega de más de 700 títulos por parte de nuestro alcalde.",
-                enlace: "https://www.gob.pe/munitrujillo",
-                fecha: "12/12/2024",
-            },
-            {
-                estado: "active",
-                imagen: "pictures/picture0002.jpeg",
-                titulo: "Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.",
-                enlace: "https://www.gob.pe/munitrujillo",
-                fecha: "12/12/2024",
-            },
-            {
-                estado: "active",
-                imagen: "pictures/picture0003.jpeg",
-                titulo: "Firma de Títulos de propiedad por parte de las familias formalizadas en Alto Trujillo.",
-                enlace: "https://www.gob.pe/munitrujillo",
-                fecha: "12/12/2024",
-            },
-            {
-                estado: "active",
-                imagen: "pictures/picture-carrusel0001.jpeg",
-                titulo: "Descubre más sobre nosotros.",
-                enlace: "https://www.gob.pe/munitrujillo",
-                fecha: "12/12/2024",
-            },
-            {
-                estado: "active",
-                imagen: "pictures/picture-carrusel0002.jpeg",
-                titulo: "Estamos en Av. España 793, Trujillo 13001.",
-                enlace: "https://www.gob.pe/munitrujillo",
-                fecha: "12/12/2024",
-            }
-        ];
+        // Función para cargar el JSON de un archivo
+        async function fetchCarouselData() {
+            const response = await fetch('carruselData.json'); // Ruta del archivo JSON
+            const data = await response.json();
+            loadCarousel(data);
+        }
     
         function loadCarousel(data) {
             const carouselInner = document.querySelector(".carousel-inner");
@@ -142,14 +110,15 @@
                             <h1 class="headlines">
                                 <a href="${item.enlace}" target="_blank">${item.titulo}</a>
                             </h1>
-                            <div class="icons">
-                                <span class="icon"><i class="fa-regular fa-calendar"></i> ${item.fecha}</span>
-                            </div>
                         </div>
                     </div>
                 `;
                 carouselInner.appendChild(carouselItem);
-    
+
+                /*<div class="icons">
+                    <span class="icon"><i class="fa-regular fa-calendar"></i> ${item.fecha}</span>
+                </div>*/
+
                 // Crear el indicador
                 const indicator = document.createElement("button");
                 indicator.type = "button";
@@ -164,8 +133,8 @@
             });
         }
     
-        // Cargar los datos al carrusel
-        loadCarousel(carouselData);
+        // Cargar los datos del JSON al cargar la página
+        fetchCarouselData();
     
         // Inicializar el carrusel de Bootstrap (agregar esta línea para habilitar la navegación)
         const carouselElement = document.querySelector('#carouselExampleIndicators');
@@ -173,7 +142,7 @@
             interval: 5000, // Intervalo entre slides
             ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
         });
-    </script>
+    </script>    
     <section id="quienes-somos">
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
             <div class="row">
