@@ -237,8 +237,8 @@ document.getElementById('imageModal').addEventListener('hidden.bs.modal', functi
 // Ocultar visor PDF por defecto
 PDFViewer.hideViewer();
 // //--------------------------------------------------------------------------------
- // Función para cargar el JSON de un archivo
- async function fetchCarouselData() {
+// Función para cargar el JSON de un archivo
+async function fetchCarouselData() {
     const response = await fetch('carruselData.json'); // Ruta del archivo JSON
     const data = await response.json();
     loadCarousel(data);

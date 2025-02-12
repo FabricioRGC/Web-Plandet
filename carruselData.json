@@ -1,31 +1,31 @@
 [
     {
         "estado": "active",
-        "imagen": "pictures/picture0001.jpeg",
+        "imagen": "pictures/picture0001.webp",
         "titulo": "Entrega de más de 700 títulos por parte de nuestro alcalde.",
         "enlace": "https://www.gob.pe/munitrujillo"
     },
     {
         "estado": "active",
-        "imagen": "pictures/picture0002.jpeg",
+        "imagen": "pictures/picture0002.webp",
         "titulo": "Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.",
         "enlace": "https://www.gob.pe/munitrujillo"
     },
     {
         "estado": "active",
-        "imagen": "pictures/picture0003.jpeg",
+        "imagen": "pictures/picture0003.webp",
         "titulo": "Firma de Títulos de propiedad por parte de las familias formalizadas en Alto Trujillo.",
         "enlace": "https://www.gob.pe/munitrujillo"
     },
     {
         "estado": "active",
-        "imagen": "pictures/picture-carrusel0001.jpeg",
+        "imagen": "pictures/picture-carrusel0001.webp",
         "titulo": "Descubre más sobre nosotros.",
         "enlace": "https://www.gob.pe/munitrujillo"
     },
     {
         "estado": "active",
-        "imagen": "pictures/picture-carrusel0002.jpeg",
+        "imagen": "pictures/picture-carrusel0002.webp",
         "titulo": "Estamos en Av. España 793, Trujillo 13001.",
         "enlace": "https://www.gob.pe/munitrujillo"
     }
