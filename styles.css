@@ -163,13 +163,17 @@
 }
 
 .sidebar {
-    background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);
+    /*background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);*/
+    background-color: #0F2A3D;
     height: 100%;
     padding: 20px;
     border-radius: 10px;
 }
 
 .sidebar a {
+
+    background-color: #4B8976;
+
     display: block;
     padding: 12px;
     color: white;
@@ -180,7 +184,8 @@
 }
 
 .sidebar a.active, .sidebar a:hover {
-    background-color: #0A2230;
+    /*background-color: #0F2A3D;*/
+    background-color: #4B8976;
     border: 1px solid #18475a;
 }
 
