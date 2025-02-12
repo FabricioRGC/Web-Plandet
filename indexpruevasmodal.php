@@ -77,11 +77,6 @@
             </button>
         </div>
     </main>   
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetchCarouselData();
-        });
-    </script>
     <section id="quienes-somos">
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
             <div class="row">
@@ -261,6 +256,11 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchCarouselData();
+        });
+    </script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
