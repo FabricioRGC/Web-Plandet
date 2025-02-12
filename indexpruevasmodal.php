@@ -77,12 +77,10 @@
             </button>
         </div>
     </main>   
-
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-    fetchCarouselData();
-});
-
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchCarouselData();
+        });
     </script>
     <section id="quienes-somos">
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
