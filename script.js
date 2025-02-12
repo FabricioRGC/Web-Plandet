@@ -301,3 +301,5 @@ const carousel = new bootstrap.Carousel(carouselElement, {
     interval: 5000, // Intervalo entre slides
     ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
 });
+
+

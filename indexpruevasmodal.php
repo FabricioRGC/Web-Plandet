@@ -79,70 +79,10 @@
     </main>   
 
     <script>
-         // Función para cargar el JSON de un archivo
-async function fetchCarouselData() {
-    const response = await fetch('carruselData.json'); // Ruta del archivo JSON
-    const data = await response.json();
-    loadCarousel(data);
-}
-
-function loadCarousel(data) {
-    const carouselInner = document.querySelector(".carousel-inner");
-    const indicators = document.querySelector(".carousel-indicators");
-
-    // Limpiar contenido actual
-    carouselInner.innerHTML = "";
-    indicators.innerHTML = "";
-
-    let activeSet = false; // Para asegurarse de que solo un elemento sea "active"
-    let index = 0; // Índice de elementos visibles en el carrusel
-
-    data.forEach((item) => {
-        if (item.estado === "none") return; // Si es "none", no lo añadimos al carrusel
-
-        // Crear el item del carrusel
-        const carouselItem = document.createElement("div");
-        carouselItem.className = `carousel-item ${item.estado === "active" && !activeSet ? "active" : ""}`;
-        activeSet = true;
-
-        carouselItem.innerHTML = `
-            <div class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('${item.imagen}');">
-                <div class="card2-body">
-                    <h1 class="headlines">
-                        <a href="${item.enlace}" target="_blank">${item.titulo}</a>
-                    </h1>
-                </div>
-            </div>
-        `;
-        carouselInner.appendChild(carouselItem);
-
-        /*<div class="icons">
-            <span class="icon"><i class="fa-regular fa-calendar"></i> ${item.fecha}</span>
-        </div>*/
-
-        // Crear el indicador
-        const indicator = document.createElement("button");
-        indicator.type = "button";
-        indicator.dataset.bsTarget = "#carouselExampleIndicators";
-        indicator.dataset.bsSlideTo = index;
-        indicator.className = index === 0 ? "active" : ""; // Marcar el primer indicador como activo
-        indicator.setAttribute("aria-label", `Slide ${index + 1}`);
-        indicators.appendChild(indicator);
-
-        // Incrementar el índice visible
-        index++;
-    });
-}
-
-// Cargar los datos del JSON al cargar la página
-fetchCarouselData();
-
-// Inicializar el carrusel de Bootstrap (agregar esta línea para habilitar la navegación)
-const carouselElement = document.querySelector('#carouselExampleIndicators');
-const carousel = new bootstrap.Carousel(carouselElement, {
-    interval: 5000, // Intervalo entre slides
-    ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
+    document.addEventListener("DOMContentLoaded", function () {
+    fetchCarouselData();
 });
+
     </script>
     <section id="quienes-somos">
         <div class="container-xxl mt-5" style="margin-bottom: 20px;">
