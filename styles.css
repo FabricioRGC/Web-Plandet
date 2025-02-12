@@ -163,7 +163,7 @@
 }
 
 .sidebar {
-    background: linear-gradient(50deg, #123340, #65A693);
+    background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);
     height: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -293,7 +293,7 @@
 }
 
 .background-PLANDET{
-    background: linear-gradient(50deg, #123340, #65A693) !important;
+    background: linear-gradient(45deg, #0F2A3D 60%, #4B8976 110%, black 120%) !important;
 }
 
 .btn-PLANDET{
