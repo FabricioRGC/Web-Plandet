@@ -302,4 +302,4 @@ const carousel = new bootstrap.Carousel(carouselElement, {
     ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
 });
 
-
+//----------------------------------------------------------------------------------------------------------

@@ -329,3 +329,13 @@
     border-radius: 22px; /* Ajusta para que se vea bien */
     z-index: -1;
 }
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}

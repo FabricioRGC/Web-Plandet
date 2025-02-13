@@ -11,35 +11,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<style>
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-    </style>
 <body style="background-color: #65A693;">
-    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background-color: #F2F2F2 !important;">
+    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background-color: #123340 !important;">
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="logo-container plandet">
                 <a href="index.html" target="_blank">
-                    <img src="pictures/LOGO_PLANDET_OK.svg" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
+                    <img src="pictures/plandet.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" style="border-color: rgba(255, 255, 255, 0.8);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html#quienes-somos">Quienes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-offset" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>                    
-                    <li class="nav-item"><a class="nav-link" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#Contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html#quienes-somos">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link scroll-offset" style="color: white !important;" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>                    
+                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html#Contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html">Noticias</a></li>
                 </ul>
             </div>
             <div class="logo-container municipalidad">
@@ -265,6 +254,19 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             fetchCarouselData();
+        });
+
+        document.addEventListener("click", function (event) {
+            const navbarToggler = document.querySelector(".navbar-toggler");
+            const navbarCollapse = document.querySelector(".navbar-collapse");
+
+            // Verifica si el menú está abierto
+            if (navbarCollapse.classList.contains("show")) {
+                // Si el clic no fue dentro del menú ni en el botón del navbar
+                if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+                    navbarToggler.click(); // Simula un clic en el botón para cerrar el menú
+                }
+            }
         });
     </script>
     <script src="script.js"></script>
