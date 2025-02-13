@@ -36,10 +36,6 @@
             </div>
         </div>
     </nav>
-
-
-
-    
     <main style="height: 100vh; background: linear-gradient(50deg, #123340, #65A693);">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
@@ -159,10 +155,12 @@
                 <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px" onclick="updateContent('gerencia3')">Subgerencia Titulación</button>
             </div>
             <div class="content-container">
-                <div class="description" id="description" style="background-color: #F2F2F2; border: 1px solid #123340">
+                <div style="width: 3% !important;">
+                </div>
+                <div class="description" id="description" style="margin-left: 3%; margin-right: 3%;background-color: #F2F2F2; border: 1px solid #123340">
                     <p>Seleccione una subgerencia para ver más detalles.</p>
                 </div>
-                <div class="list-container text-center background-PLANDET" style="padding: 10px; border-radius: 10px;">
+                <div class="list-container text-center background-PLANDET" style="margin-right: 3% !important; padding: 10px; border-radius: 10px;">
                     <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Trámites</h4>
                     <ul id="tramites-list" class="list-group mb-3"></ul>
                     <h4 style="border-radius: 5px; padding: 2px; background-color: #F2F2F2;">Servicios</h4>
