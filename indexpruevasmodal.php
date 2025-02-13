@@ -78,9 +78,9 @@
         </div>
     </main>   
     <section id="quienes-somos">
-        <div class="container-xxl mt-5" style="margin-bottom: 20px;">
+        <div class="container-xxl mt-5" style="margin-bottom: 20px !important;">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3" style="margin-bottom: 20px !important;">
                     <div class="sidebar">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>
