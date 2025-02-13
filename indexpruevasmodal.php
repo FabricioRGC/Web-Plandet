@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #65A693;">
-    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background-color: #123340 !important;">
+    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background: linear-gradient(45deg, #0F2A3D 60%, #4B8976 110%, black 120%) !important;">
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="logo-container plandet">
                 <a href="index.html" target="_blank">
