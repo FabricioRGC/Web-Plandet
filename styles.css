@@ -4,14 +4,12 @@
 }
 
 .logo-container{
-    width: 250px !important;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 230px !important;
     margin-left: 10px;
 }
 
 .plandet{
-    width: 230px;
+    width: 210px !important;
 }
 
 .municipalidad{
