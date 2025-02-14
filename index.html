@@ -16,7 +16,7 @@
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="logo-container plandet">
                 <a href="index.html" target="_blank">
-                    <img src="pictures/plandet.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
+                    <img src="pictures/LOGO_PLANDET_OK2.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
                 </a>
             </div>
             <button class="navbar-toggler" style="border-color: rgba(255, 255, 255, 0.8);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
