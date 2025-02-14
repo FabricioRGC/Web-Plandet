@@ -161,25 +161,29 @@
                     <div class="row gy-4">
                         <div class="col-12 col-lg-12 justifi text-center">
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET" style="border: 5px solid #fff; background-color: #F2F2F2;">
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET clickable" style="border: 5px solid #fff; background-color: #F2F2F2;" 
+                            onclick="window.open('https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud', '_blank')">                        >
                             <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Consulta el estado de tus tramites">
                                 Mesa de partes
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET" style="border: 5px solid #fff; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('p_noticias.html', '_blank')">
                             <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">
                                 Noticias
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET" style="border: 5px solid #fff; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('p_equipo.html', '_blank')">
                             <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_equipo.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Conoce a nuestros miembros">
                                 Equipo
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET" style="border: 5px solid #fff; background-color: #F2F2F2">
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('http://200.233.44.151:82/visor/', '_blank')">
                             <i class="fas fa-map me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="http://200.233.44.151:82/visor/" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Visor MPT">
                                 Visor MPT

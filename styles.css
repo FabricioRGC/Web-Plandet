@@ -310,6 +310,10 @@
     color: white !important;
 }
 
+.btn-PLANDET:hover{
+    background: #0a1f2e !important;
+}
+
 .no-border {
     border: none;
 }
@@ -340,4 +344,12 @@
 
 .social-icon:hover {
     transform: scale(1.1);
+}
+
+.list-group-item {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #0a1f2e !important; /* Color más claro cuando el mouse pasa sobre el elemento */
 }
