@@ -376,7 +376,7 @@
     background: linear-gradient(45deg, #0F2A3D 30%, #ffffff 70%);
     background-size: 320% 100%;
     background-position: right;
-    transition: background-position 1s ease;
+    transition: background-position 1.5s ease;
     padding: 50px;
     text-align: center;
     cursor: pointer;
@@ -388,3 +388,22 @@
     background-position: left;
     color: white !important;
 }
+
+
+.animated-background3 {
+    background: linear-gradient(45deg, #0F2A3D 30%, #ffffff 70%);
+    background-size: 320% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.animated-background3:hover {
+    background-position: left;
+    color: white !important;
+}
+

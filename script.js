@@ -135,7 +135,7 @@ function updateContent(gerencia) {
     `).join('');
 
     document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `
-        <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
+        <li class="list-group-item animated-background3" onclick="showModal('${item}')" style="cursor: pointer;">
             ${item}
         </li>
     `).join('');
