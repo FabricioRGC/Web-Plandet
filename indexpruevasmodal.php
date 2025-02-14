@@ -204,7 +204,7 @@
                 <div class="description" id="description" style="margin-left: 3%; margin-right: 3%;background-color: #F2F2F2; border: 1px solid #123340">
                     <p>Seleccione una subgerencia para ver más detalles.</p>
                 </div>
-                <div class="list-container text-center" style="margin-right: 3% !important; padding: 10px; border-radius: 10px; backbackground: rgb(255, 255, 255); /* Ajusta según el fondo */">
+                <div class="list-container text-center" style="margin-right: 3% !important; padding: 10px; border-radius: 10px; background: rgb(255, 255, 255); /* Ajusta según el fondo */">
                     <h4 style="border-radius: 5px; padding: 2px; background-color: #65A693;">Trámites</h4>
                     <ul id="tramites-list" class="list-group mb-3"></ul>
                     <h4 style="border-radius: 5px; padding: 2px; background-color: #65A693;">Servicios</h4>
