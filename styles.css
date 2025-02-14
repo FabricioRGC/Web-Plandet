@@ -209,10 +209,9 @@
 .list-group-item {
     border-radius: 5px;
     border: 1px solid #123340 !important;
-    color: #ffffff !important;
     margin: 5px 0;
     transition: background-color 0.3s ease;
-    background-color: #123340 !important;
+
 }
 
 .list-group-item a {
@@ -231,8 +230,8 @@
 }
 
 .list-group {
-    min-height: 150px;
-    max-height: 150px;
+    min-height: 155px;
+    max-height: 155px;
     overflow-y: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -351,10 +350,9 @@
 }
 
 .list-group-item:hover {
-    background-color: #0a1f2e !important; /* Color más claro cuando el mouse pasa sobre el elemento */
+    background-color: #0a1f2e !important; 
 }
 
-/* Estilo base del elemento */
 .animated-background {
     background: linear-gradient(45deg, #0F2A3D 50%, #4B8976 110%, black 120%);
     background-size: 200% 100%;
@@ -370,7 +368,23 @@
     font-weight: bold;
 }
 
-/* Cambia la posición del gradiente al hacer hover */
 .animated-background:hover {
     background-position: left;
+}
+
+.animated-background2 {
+    background: linear-gradient(45deg, #0F2A3D 30%, #ffffff 70%);
+    background-size: 400% 100%;
+    background-position: right;
+    transition: background-position 1s ease;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.animated-background2:hover {
+    background-position: left;
+    color: white !important;
 }

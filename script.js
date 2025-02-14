@@ -129,13 +129,13 @@ function updateContent(gerencia) {
     document.getElementById("description").innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
     
     document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `
-        <li class="list-group-item" onclick="showModal('${item}')" style="cursor: pointer;">
+        <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
             ${item}
         </li>
     `).join('');
 
     document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `
-        <li class="list-group-item" onclick="showModal('${item}')" style="cursor: pointer;">
+        <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
             ${item}
         </li>
     `).join('');
