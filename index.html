@@ -12,11 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body style="background-color: #65A693;">
-    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background: linear-gradient(45deg, #4B8976 30%, #0F2A3D 110%, black 120%) !important;">
+    <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background: linear-gradient(45deg, #0F2A3D 30%, #4B8976 110%, black 120%) !important;">
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="logo-container plandet">
                 <a href="index.html" target="_blank">
-                    <img src="pictures/LOGO_PLANDET_OK2.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
+                    <img src="pictures/LOGO_PLANDET_OK-white.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
                 </a>
             </div>
             <button class="navbar-toggler" style="border-color: rgba(255, 255, 255, 0.8);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,11 +32,11 @@
                 </ul>
             </div>
             <div class="logo-container municipalidad">
-                <img src="pictures/LOGO_MUNICIPALIDAD-removebg-white.png" alt="Logo 2" title="Municipalidad Provincial de Trujillo" class="img-fluid" style="height: 80px;">
+                <img src="pictures/LOGO_MUNICIPALIDAD-white.png" alt="Logo 2" title="Municipalidad Provincial de Trujillo" class="img-fluid" style="height: 80px;">
             </div>
         </div>
     </nav>
-    <main style="height: 100vh; background: linear-gradient(50deg, #123340, #65A693);">
+    <main style="height: 89vh; background: linear-gradient(50deg, #123340, #65A693);">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
                 <!-- Los botones de los indicadores se generarán aquí -->
