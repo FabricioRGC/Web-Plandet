@@ -168,7 +168,7 @@
                                 Mesa de partes
                             </a>
                         </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 background-PLANDET clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
                             onclick="window.open('p_noticias.html', '_blank')">
                             <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
                             <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">

@@ -353,3 +353,24 @@
 .list-group-item:hover {
     background-color: #0a1f2e !important; /* Color más claro cuando el mouse pasa sobre el elemento */
 }
+
+/* Estilo base del elemento */
+.animated-background {
+    background: linear-gradient(45deg, #0F2A3D 50%, #4B8976 110%, black 120%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 1s ease;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+
+
+    font-weight: bold;
+}
+
+/* Cambia la posición del gradiente al hacer hover */
+.animated-background:hover {
+    background-position: left;
+}

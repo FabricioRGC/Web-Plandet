@@ -314,3 +314,10 @@ const carousel = new bootstrap.Carousel(carouselElement, {
 });
 
 //----------------------------------------------------------------------------------------------------------
+document.querySelector('.animated-background').addEventListener('mouseover', () => {
+    console.log('Cursor encima del elemento');
+});
+
+document.querySelector('.animated-background').addEventListener('mouseout', () => {
+    console.log('Cursor fuera del elemento');
+});
