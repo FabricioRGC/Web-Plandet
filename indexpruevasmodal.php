@@ -209,9 +209,9 @@
                     <p>Seleccione una subgerencia para ver más detalles.</p>
                 </div>
                 <div class="list-container text-center" style="margin-right: 3% !important; padding: 10px; border-radius: 10px; background: rgb(255, 255, 255); /* Ajusta según el fondo */">
-                    <h4 style="border-radius: 5px; padding: 2px; background-color: #65A693;">Trámites</h4>
+                    <h4 style="border-radius: 5px; padding: 2px; background-color:rgb(255, 255, 255);">Trámites</h4>
                     <ul id="tramites-list" class="list-group mb-3"></ul>
-                    <h4 style="border-radius: 5px; padding: 2px; background-color: #65A693;">Servicios</h4>
+                    <h4 style="border-radius: 5px; padding: 2px; background-color:rgb(255, 255, 255);">Servicios</h4>
                     <ul id="servicios-list" class="list-group"></ul>
                 </div>
                 </div>
