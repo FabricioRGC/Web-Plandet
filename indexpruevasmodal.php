@@ -36,7 +36,7 @@
             </div>
         </div>
     </nav>
-    <main style="height: 89vh; background: linear-gradient(50deg, #123340, #65A693);">
+    <main style="height: 89vh;">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
                 <!-- Los botones de los indicadores se generarán aquí -->
@@ -67,16 +67,60 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
-                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
+                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-e px-3 rounded"></i>
                 <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </main>   
-    <section id="quienes-somos">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="quienes-somos" style="background-color: white; border: 1px solid white">
         <div class="container-xxl mt-5" style="margin-bottom: 20px !important;">
             <div class="row">
-                <div class="col-md-3" style="margin-bottom: 20px !important;">
+                <div class="col-md-3" style="margin-bottom: 20px !important;  border: #0e2330;">
                     <div class="sidebar">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>

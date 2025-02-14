@@ -1,3 +1,4 @@
+
 .list-group-item a {
     color: white ;
     text-decoration: none !important;
@@ -164,19 +165,21 @@
 }
 
 .sidebar {
-    background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);
-    /*background-color: #0F2A3D;*/
+    /*background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);*/
+    background-color: #ffffff;
+
     height: 100%;
     padding: 20px;
     border-radius: 10px;
 }
 
 .sidebar a {
+    background-color: #0F2A3D;
     /*background-color: #4B8976;*/
-
+    border: 1px solid #18475a;
     display: block;
     padding: 12px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
@@ -184,7 +187,7 @@
 }
 
 .sidebar a.active, .sidebar a:hover {
-    background-color: #0F2A3D;
+    background-color: #0a1f2e;
     /*background-color: #4B8976;*/
     border: 1px solid #18475a;
 }
