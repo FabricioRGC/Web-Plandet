@@ -374,7 +374,7 @@
 
 .animated-background2 {
     background: linear-gradient(45deg, #0F2A3D 30%, #ffffff 70%);
-    background-size: 400% 100%;
+    background-size: 320% 100%;
     background-position: right;
     transition: background-position 1s ease;
     padding: 50px;
