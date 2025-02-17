@@ -10,8 +10,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-
 </head>
 <body style="background-color:rgb(255, 255, 255);">
     <nav class="navbar navbar-expand-xxl bg-light shadow-sm sticky-top" style="background: linear-gradient(45deg, #0F2A3D 30%, #4B8976 110%, black 120%) !important;">
@@ -38,6 +36,7 @@
             </div>
         </div>
     </nav>
+    <!-- HTML -->
     <main style="height: 89vh;">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
@@ -69,106 +68,17 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
-                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-e px-3 rounded"></i>
+                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
                 <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </main>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <style>
     
-    @keyframes fadeInLeftOnScroll {
-    from {
-        opacity: 0;
-        transform: translateX(-120px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    }
-
-    .content-box {
-    padding: 20px;
-    background-color: #F2F2F2;
-    color: #000;
-    border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    }
-
-    .visible {
-    animation: fadeInLeftOnScroll 1s ease-out forwards;
-    }
-
-    section {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    }
-    
-        </style>
-
-    <script>
-        document.addEventListener('scroll', () => {
-        const contentBox = document.querySelector('.content-box');
-        const rect = contentBox.getBoundingClientRect();
-        if (rect.top < window.innerHeight * 0.75) {
-            contentBox.classList.add('visible');
-        }
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
     <section id="quienes-somos" style="border: 1px solid #fff">
         <div class="container-xxl mt-5" style="margin-bottom: 20px !important;">
             <div class="row">
-                <div class="col-md-3" style="margin-bottom: 20px !important;  border: #0e2330;">
+                <div class="col-md-3" style="margin-bottom: 20px !important;">
                     <div class="sidebar">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>
@@ -181,30 +91,45 @@
                         <h2 class="text-center">¿Quiénes Somos?</h2>
                         <h4 class="text-center text-secondary">(PLANDET)</h4>
                         <p class="mt-4">
-                            Somos una entidad de la Municipalidad Provincial de Trujillo encargada de la planificación, ordenamiento y desarrollo sostenible del territorio. Nos dedicamos a la generación y gestión de información territorial, al diseño de estrategias urbanas y a la formulación de planes que contribuyan a mejorar la calidad de vida de los ciudadanos. 
+                        Somos una entidad de la Municipalidad Provincial de Trujillo encargada de la planificación, ordenamiento y desarrollo sostenible del territorio. Nos dedicamos a la generación y gestión de información territorial, al diseño de estrategias urbanas y a la formulación de planes que contribuyan a mejorar la calidad de vida de los ciudadanos. 
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
+<style>
+    /* CSS */
+    @keyframes fade-away {
+    /* Animación para desaparecer: parte del estado visible y termina en opacidad 0 */
+    from { opacity: 1; }
+    to   { opacity: 0; }
+    }
+
+    @keyframes fade-in {
+    /* Animación para aparecer: inicia en opacidad 0 y termina en 1 */
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    }
+
+    /* Asignamos la línea de tiempo de scroll a ambos bloques */
+    main,
+    #quienes-somos {
+    view-timeline: --scroll;
+    }
+
+    /* Animación para el carrusel: se desvanece al hacer scroll (al salir de la vista) */
+    main .carousel {
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 20% exit 90%;
+    }
+
+
+
+</style>
+
     <section id="dashboard">
         <div class="container-lg mt-2" style="border-top: 1px solid #123340;">
             <div class="row">

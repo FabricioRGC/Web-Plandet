@@ -1,3 +1,4 @@
+
 function showContent(section) {
     let content = {
         "quienes-somos": `
@@ -30,8 +31,17 @@ function showContent(section) {
         `
     };
 
-    document.getElementById("content").innerHTML = content[section];
+    let contentBox = document.getElementById("content");
+    contentBox.innerHTML = content[section];
 
+    // Remover la clase 'slide-in' para reiniciar la animación
+    contentBox.classList.remove("slide-in");
+    // Forzar el reflow para reiniciar la animación
+    void contentBox.offsetWidth;
+    // Agregar la clase para activar la animación de entrada
+    contentBox.classList.add("slide-in");
+
+    // Manejar los links activos
     let links = document.querySelectorAll(".sidebar a");
     links.forEach(link => link.classList.remove("active"));
     event.target.classList.add("active");
