@@ -16,7 +16,7 @@
         <div class="container-xxl d-flex justify-content-between align-items-center">
             <div class="logo-container plandet">
                 <a href="index.html" target="_blank">
-                    <img src="pictures/LOGO_PLANDET_OK-white.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
+                    <img src="pictures/LOGO_PLANDET_OK-white-2.png" alt="Logo 1" title="Plan de Desarrollo Territorial de Trujillo" class="img-fluid" style="height: auto;">
                 </a>
             </div>
             <button class="navbar-toggler" style="border-color: rgba(255, 255, 255, 0.8);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,54 +67,12 @@
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
-                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-e px-3 rounded"></i>
+                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
                 <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </main>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <section id="quienes-somos" style="border: 1px solid #fff">
@@ -140,6 +98,8 @@
             </div>
         </div>
     </section>
+
+
     <section id="dashboard">
         <div class="container-lg mt-2" style="border-top: 1px solid #123340;">
             <div class="row">
