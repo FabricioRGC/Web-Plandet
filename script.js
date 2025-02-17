@@ -35,11 +35,11 @@ function showContent(section) {
     contentBox.innerHTML = content[section];
 
     // Remover la clase 'slide-in' para reiniciar la animación
-    contentBox.classList.remove("slide-in");
+    contentBox.classList.remove("slide-in-right");
     // Forzar el reflow para reiniciar la animación
     void contentBox.offsetWidth;
     // Agregar la clase para activar la animación de entrada
-    contentBox.classList.add("slide-in");
+    contentBox.classList.add("slide-in-right");
 
     // Manejar los links activos
     let links = document.querySelectorAll(".sidebar a");
@@ -136,20 +136,33 @@ function showModal(tramite) {
 }
 
 function updateContent(gerencia) {
-    document.getElementById("description").innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
+    const descriptionElement = document.getElementById("description");
+    // Actualiza el contenido de la descripción
+    descriptionElement.innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
     
+    // Reinicia la animación:
+    // 1. Elimina la clase para reiniciar el estado
+    descriptionElement.classList.remove("slide-in-left");
+    // 2. Forzar un reflow para reiniciar la animación (esto es opcional pero recomendado)
+    void descriptionElement.offsetWidth;
+    // 3. Vuelve a agregar la clase para activar la animación
+    descriptionElement.classList.add("slide-in-left");
+    
+    // Actualiza la lista de trámites
     document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `
         <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
             ${item}
         </li>
     `).join('');
 
+    // Actualiza la lista de servicios
     document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `
         <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
             ${item}
         </li>
     `).join('');
 }
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

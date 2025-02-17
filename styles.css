@@ -86,7 +86,7 @@
 
 .headlines a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
     transition: all 0.5s ease;
 }
 
@@ -124,7 +124,7 @@
 }
 
 .custom-text-green{
-    color:rgba(255, 255, 255, 0.72);;
+    color:rgba(255, 255, 255, 0.72) !important;
 }
 
 .custom-box-green{
@@ -162,7 +162,6 @@
 .sidebar {
     /*background: linear-gradient(60deg, #0F2A3D 40%, #4B8976 140%, black 120%);*/
     background-color: #ffffff;
-
     height: 100%;
     padding: 20px;
     border-radius: 10px;
@@ -174,7 +173,7 @@
     border: 1px solid #18475a;
     display: block;
     padding: 12px;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
@@ -195,7 +194,6 @@
     box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
     transition: opacity 0.5s ease-out;
 }
-
 
 .btn {
     border-radius: 8px;
@@ -232,8 +230,8 @@
 }
 
 .list-group {
-    min-height: 155px;
-    max-height: 155px;
+    min-height: 157px;
+    max-height: 157px;
     overflow-y: auto;
     padding-left: 4px;
     padding-right: 4px;
@@ -278,7 +276,7 @@
 }
 
 .modal-body {
-    max-height: 80vh;
+    max-height: 100vh;
     overflow-y: auto;
 }
 
@@ -401,12 +399,26 @@
         transform: translateX(0);
         opacity: 1;
     }
-    }
+}
 
-    .slide-in {
+.slide-in-right {
     animation: slideInRight 0.6s ease-out;
+}
+/*------------------------------------------------------------------------------------------*/
+@keyframes slideInLeft {
+    0% {
+    transform: translateX(-100%);
+    opacity: 0;
     }
+    100% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
 
+.slide-in-left {
+    animation: slideInLeft 0.4s ease-out;
+}
 
 
 
