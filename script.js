@@ -321,3 +321,4 @@ document.querySelector('.animated-background').addEventListener('mouseover', () 
 document.querySelector('.animated-background').addEventListener('mouseout', () => {
     console.log('Cursor fuera del elemento');
 });
+//----------------------------------------------------------------------------------------------------------------------------
