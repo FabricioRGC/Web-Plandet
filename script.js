@@ -271,6 +271,11 @@ document.getElementById('imageModal').addEventListener('hidden.bs.modal', functi
 // Ocultar visor PDF por defecto
 PDFViewer.hideViewer();
 // //--------------------------------------------------------------------------------
+/*
+document.addEventListener("DOMContentLoaded", function () {
+    fetchCarouselData();
+});
+
 // Función para cargar el JSON de un archivo
 async function fetchCarouselData() {
     const response = await fetch('carruselData.json'); // Ruta del archivo JSON
@@ -308,9 +313,9 @@ function loadCarousel(data) {
         `;
         carouselInner.appendChild(carouselItem);
 
-        /*<div class="icons">
+        /<div class="icons">
             <span class="icon"><i class="fa-regular fa-calendar"></i> ${item.fecha}</span>
-        </div>*/
+        </div>/
 
         // Crear el indicador
         const indicator = document.createElement("button");
@@ -326,16 +331,16 @@ function loadCarousel(data) {
     });
 }
 
-// Cargar los datos del JSON al cargar la página
+/ Cargar los datos del JSON al cargar la página
 fetchCarouselData();
 
-// Inicializar el carrusel de Bootstrap (agregar esta línea para habilitar la navegación)
+/ Inicializar el carrusel de Bootstrap (agregar esta línea para habilitar la navegación)
 const carouselElement = document.querySelector('#carouselExampleIndicators');
 const carousel = new bootstrap.Carousel(carouselElement, {
     interval: 5000, // Intervalo entre slides
     ride: 'carousel' // Asegurarse de que el carrusel sea funcional desde el principio
 });
-
+*/
 //----------------------------------------------------------------------------------------------------------
 document.querySelector('.animated-background').addEventListener('mouseover', () => {
     console.log('Cursor encima del elemento');

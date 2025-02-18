@@ -36,20 +36,30 @@
             </div>
         </div>
     </nav>
-    <main style="height: 89vh;">
+    <main style="height: 89vh; background: linear-gradient(50deg, #123340, #65A693);">
         <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
-                <!-- Los botones de los indicadores se generarán aquí -->
+            <div class="carousel-indicators" style=" bottom: -5px; z-index: 10; position: absolute;">
+                <div class="py-1 px-1 rounded-6" style="background-color: rgba(0, 0, 0, 0.473);">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" >
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" class="">
+                    </button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" class="">
+                    </button>
+                </div>
             </div>
             <div class="w-100 h-100">
                 <div class="position-relative text-center w-100 h-100">
                     <div class="carousel-inner w-100 h-100">
-                        <!-- Los items del carrusel se generarán aquí -->
                         <div class="carousel-item active w-100 h-100">
-                            <div class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
+                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
                                 <div class="card2-body">
                                     <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de más de 700 títulos por parte de nuestro alcalde.</a>
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
                                     </h1>
                                     <div class="icons">
                                         <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
@@ -57,24 +67,70 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Agrega más elementos del carrusel aquí -->
+                        <div class="carousel-item w-100 h-100">
+                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
+                                <div class="card2-body">
+                                    <h1 class="headlines">
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
+                                    </h1>
+                                    <div class="icons">
+                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 h-100">
+                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
+                                <div class="card2-body">
+                                    <h1 class="headlines">
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
+                                    </h1>
+                                    <div class="icons">
+                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 h-100">
+                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0001.jpeg');">
+                                <div class="card2-body text-card-custom">
+                                    <h1 class="headlines">
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Descubre mas sobre nosotros.</a>
+                                    </h1>
+                                    <div class="icons">
+                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item w-100 h-100">
+                            <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0002.jpeg');">
+                                <div class="card2-body">
+                                    <h1 class="headlines">
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Estamos en Av. España 793, Trujillo 13001.</a>
+                                    </h1>
+                                    <div class="icons">
+                                        <span class="icon"><i class="fa-solid fa-calendar"></i>12/12/2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" title="Previous">
-                <i class="fa-solid fa-chevron-left text-bg-dark text-light py-3 px-3 rounded"></i>
-                <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
-                <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
-                <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" title="Previous">
+                    <i class="fa-solid fa-chevron-left text-bg-dark text-light py-3 px-3 rounded"></i>
+                    <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
+                    <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
+                    <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    </main>   
-
-
+    </main>
     <section id="quienes-somos" style="border: 1px solid #fff">
         <div class="container-xxl mt-5" style="margin-bottom: 20px !important;">
             <div class="row">
@@ -258,9 +314,6 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            fetchCarouselData();
-        });
 
         document.addEventListener("click", function (event) {
             const navbarToggler = document.querySelector(".navbar-toggler");
