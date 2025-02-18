@@ -24,11 +24,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html#quienes-somos">Quienes Somos</a></li>
-                    <li class="nav-item"><a class="nav-link scroll-offset" style="color: white !important;" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>                    
-                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html#Contacto">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link" style="color: white !important;" href="index.html">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link underline" style="color: white !important;" href="index.html#quienes-somos">Quienes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link underline" style="color: white !important;" href="index.html#tramites_y_servicios">Tramites y Servicios</a></li>                    
+                    <li class="nav-item"><a class="nav-link underline" style="color: white !important;" href="http://200.233.44.151:82/visor/" target="_blank">Visor MPT</a></li>
+                    <li class="nav-item"><a class="nav-link underline" style="color: white !important;" href="index.html#Contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link underline" style="color: white !important;" href="index.html">Noticias</a></li>
                 </ul>
             </div>
             <div class="logo-container municipalidad">
