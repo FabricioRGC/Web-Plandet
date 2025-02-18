@@ -419,8 +419,29 @@
 .slide-in-left {
     animation: slideInLeft 0.4s ease-out;
 }
+/*-------------------------------------------------------------------------------------------*/
+    .underline {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .underline:after {
+        content: '';
+        position: absolute;
 
-
-
+        width: 80%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 10%;
+        background-color: rgb(255, 255, 255);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    
+    .underline:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 
 
