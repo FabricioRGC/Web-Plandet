@@ -58,9 +58,7 @@
                         <div class="carousel-item active w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
                                 <div class="card2-body custom-pos slide-top">
-                                    <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
-                                    </h1>
+                                    <img src="pictures/LOGO_PLANDET_OK-white-2.png" alt="Logo" class="img-fluid">
                                 </div>
                             </div>
                         </div>
