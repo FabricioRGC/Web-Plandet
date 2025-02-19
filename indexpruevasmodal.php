@@ -193,6 +193,73 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+    <div class="container-lg mt-4">
+        <div class="text-center">
+            <h2 class="fw-bold">Subgerencia</h2>
+            <p>(PLANDET)</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-12 col-lg-4 d-flex">
+                <div class="card shadow-sm p-4 w-100">
+                    <div class="text-left mb-3">
+                        <span class="bg-light p-3 rounded-circle d-inline-block">
+                            <i class="fas fa-globe" whith=30px></i>
+                        </span>
+                    </div>
+                    <div class="">
+                        <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Geomática</h5>
+                        <p>Gestiona y analiza información geoespacial con SIG, teledetección y cartografía digital. Su labor facilita decisiones en ordenamiento territorial, catastro y gestión ambiental, asegurando bases de datos precisas para proyectos de infraestructura y urbanismo.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex">
+                <div class="card shadow-sm p-4 w-100">
+                    <div class="text-left mb-3">
+                        <span class="bg-light p-3 rounded-circle d-inline-block">
+                            <i class="fas fa-map"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Planificación</h5>
+                    <p>Diseña estrategias para el desarrollo sostenible, formulando planes y evaluando proyectos. Optimiza recursos, prioriza inversiones y alinea iniciativas con normativas, contribuyendo al crecimiento ordenado y al bienestar social.</p>
+                    <a href="#" class="text-warning text-decoration-none fw-bold">menos →</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex">
+                <div class="card shadow-sm p-4 w-100">
+                    <div class="text-left mb-3">
+                        <span class="bg-light p-3 rounded-circle d-inline-block">
+                            <i class="fas fa-draw-polygon"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Titulación</h5>
+                    <p>Se encarga de regularizar y formalizar la propiedad de tierras, asegurando la entrega legal y transparente de títulos. Realiza estudios técnicos, jurídicos y sociales para validar terrenos y colabora con entidades para agilizar los procesos administrativos.</p>
+                    <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
     <section id="tramites_y_servicios">
         <div class="container-xxl mt-3" style="padding-bottom: 30px; border-top: 1px solid #123340; border-bottom: 1px solid #123340">
             <h1 class="text-center mb-4" style="margin-top: 15px;">Trámites y Servicios</h1>

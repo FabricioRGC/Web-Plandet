@@ -283,7 +283,6 @@
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
     transition: opacity 0.5s ease-out;
 }
 
@@ -534,5 +533,12 @@
         transform: scaleX(1);
         /*transform-origin: bottom left;*/
     }
+
+    .underline2 {
+        display: inline-block;
+        border-bottom: 2px solid rgb(75, 69, 69) !important; /* Ajusta el grosor y color */
+        padding-bottom: 2px; /* Espacio entre el texto y la línea */
+    }
+    
 
 
