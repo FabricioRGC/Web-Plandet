@@ -67,10 +67,110 @@
 }
 
 .card2-body {
+    width: 600px;
     position: absolute;
     z-index: 3;
-    padding-bottom: 30px
 }
+
+.card2-body.custom-pos {
+    top: 20%; /* Modifica esta propiedad para mover el texto */
+    left: 5%;
+    transform: translate(0, 0); /* Desactiva el centrado automático */
+}
+
+/* Animación desde arriba */
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animación desde la izquierda */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación desde la derecha */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animación desde abajo */
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* 🚀 Animación desde la esquina inferior derecha */
+@keyframes slideInBottomRight {
+    0% {
+        transform: translate(100%, 100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+/* Aplicar las animaciones a cada card */
+.card2-body.slide-top {
+    animation: slideInTop 2.6s ease-out;
+}
+
+.card2-body.slide-left {
+    animation: slideInLeft 2.6s ease-out;
+}
+
+.card2-body.slide-right {
+    animation: slideInRight 2.6s ease-out;
+}
+
+.card2-body.slide-bottom {
+    animation: slideInBottom 2.6s ease-out;
+}
+
+.card2-body.slide-bottom-right {
+    animation: slideInBottomRight 2.6s ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .carousel-indicators [data-bs-target] {
     width: 25px;
