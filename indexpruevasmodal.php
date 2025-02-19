@@ -58,19 +58,16 @@
                         <div class="carousel-item active w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
                                 <div class="card2-body">
-                                    <h1 class="headlines">
+                                    <h1 class="headlines" style="margin-bottom: 30px !important;">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de mas de 700 titulos por parte de nuestro alcalde.</a>
                                     </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
                                 <div class="card2-body">
-                                    <h1 class="headlines">
+                                    <h1 class="headlines" style="margin-bottom: 30px !important;">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
                                     </h1>
                                 </div>
@@ -79,7 +76,7 @@
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
                                 <div class="card2-body">
-                                    <h1 class="headlines">
+                                    <h1 class="headlines" style="margin-bottom: 30px !important;">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
                                     </h1>
                                 </div>
@@ -88,7 +85,7 @@
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0001.jpeg');">
                                 <div class="card2-body text-card-custom">
-                                    <h1 class="headlines">
+                                    <h1 class="headlines" style="margin-bottom: 30px !important;">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Descubre mas sobre nosotros.</a>
                                     </h1>
                                 </div>
@@ -97,7 +94,7 @@
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0002.jpeg');">
                                 <div class="card2-body">
-                                    <h1 class="headlines">
+                                    <h1 class="headlines" style="margin-bottom: 30px !important;">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Estamos en Av. España 793, Trujillo 13001.</a>
                                     </h1>
                                 </div>
