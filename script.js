@@ -272,6 +272,46 @@ document.getElementById('imageModal').addEventListener('hidden.bs.modal', functi
 PDFViewer.hideViewer();
 // //--------------------------------------------------------------------------------
 /*
+<main style="height: 89vh;">
+    <div id="carouselExampleIndicators" class="carousel slide w-100 h-100 d-flex flex-row justify-content-center align-items-center" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators" style="bottom: -5px; z-index: 10; position: absolute;">
+            <!-- Los botones de los indicadores se generarán aquí -->
+        </div>
+        <div class="w-100 h-100">
+            <div class="position-relative text-center w-100 h-100">
+                <div class="carousel-inner w-100 h-100">
+                    <!-- Los items del carrusel se generarán aquí -->
+                    <div class="carousel-item active w-100 h-100">
+                        <div class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
+                            <div class="card2-body">
+                                <h1 class="headlines">
+                                    <a href="https://www.gob.pe/munitrujillo" target="_blank">Entreaga de más de 700 títulos por parte de nuestro alcalde.</a>
+                                </h1>
+                                <div class="icons">
+                                    <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Agrega más elementos del carrusel aquí -->
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" title="Previous">
+            <i class="fa-solid fa-chevron-left text-bg-dark text-light py-3 px-3 rounded"></i>
+            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" title="Next">
+            <i class="fa-solid fa-chevron-right text-bg-dark text-light py-3 px-3 rounded"></i>
+            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</main>
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     fetchCarouselData();
 });
@@ -350,3 +390,13 @@ document.querySelector('.animated-background').addEventListener('mouseout', () =
     console.log('Cursor fuera del elemento');
 });
 //----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+//----------------------------------------------------------------------------------------------------------------------------
+

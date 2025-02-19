@@ -73,9 +73,6 @@
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
                                     </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,9 +82,6 @@
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
                                     </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -97,9 +91,6 @@
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Descubre mas sobre nosotros.</a>
                                     </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-regular fa-calendar"></i>12/12/2024</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -109,9 +100,6 @@
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Estamos en Av. España 793, Trujillo 13001.</a>
                                     </h1>
-                                    <div class="icons">
-                                        <span class="icon"><i class="fa-solid fa-calendar"></i>12/12/2024</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
