@@ -238,7 +238,7 @@
                 <div class="card shadow-sm p-4 w-100">
                     <div class="text-left mb-3">
                         <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-draw-polygon"></i>
+                            <i class="fas fa-draw-polygonv"></i>
                         </span>
                     </div>
                     <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Titulación</h5>

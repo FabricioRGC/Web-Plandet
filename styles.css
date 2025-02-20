@@ -523,7 +523,7 @@
         transform: scaleX(0);
         height: 2px;
         bottom: 0;
-        left: 10%;
+        left: 11%;
         background-color: rgb(255, 255, 255);
         transform-origin: bottom left /*right*/;
         transition: transform 0.3s ease-out;
@@ -541,4 +541,10 @@
     }
     
 
+    .card:hover h5 {
+        background:  #ff6600; /* Cambia los colores según lo necesites */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: 0.4s ease-in-out;
+    }
 
