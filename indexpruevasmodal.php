@@ -212,7 +212,7 @@
                 <div class="card shadow-sm p-4 w-100">
                     <div class="text-left mb-3">
                         <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-globe" whith=30px></i>
+                            <i class="fas fa-globe" style="color:#4B8976;"></i>
                         </span>
                     </div>
                     <div class="">
@@ -226,7 +226,7 @@
                 <div class="card shadow-sm p-4 w-100">
                     <div class="text-left mb-3">
                         <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-map"></i>
+                            <i class="fas fa-map" style="color:#4B8976;"></i>
                         </span>
                     </div>
                     <div>
@@ -240,7 +240,7 @@
                 <div class="card shadow-sm p-4 w-100">
                     <div class="text-left mb-3">
                         <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-draw-polygonv"></i>
+                            <i class="fas fa-draw-polygon" style="color:#4B8976;"></i>
                         </span>
                     </div>
                     <div>

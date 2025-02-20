@@ -550,7 +550,7 @@
         background: transparent; /* Evita que se vea un fondo inesperado */
         -webkit-background-clip: text;
         -webkit-text-fill-color: inherit; /* Mantiene el color normal antes del hover */
-        transition: background 0.4s ease-in-out, -webkit-text-fill-color 0.4s ease-in-out;
+        transition: background 0.2s ease-in-out, -webkit-text-fill-color 0.4s ease-in-out;
     }
     
     .card h5:after {
@@ -561,15 +561,16 @@
         height: 2px;
         bottom: 0;
         left: 0;
-        background-color: #00ffea;
+        background-color: #4B8976;
         transform-origin: bottom left;
-        transition: transform 0.4s ease-in-out;
+        transition: transform 0.6s ease-in-out;
     }
     
     .card:hover h5 {
-        background: linear-gradient(90deg, #00ffea, #00ffea); /* Aplica solo en hover */
+        background:#4B8976; /* Aplica solo en hover */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        cursor: pointer;
     }
     
     .card:hover h5:after {
@@ -600,7 +601,7 @@
         height: 2px;
         bottom: 0;
         left: 0; /* Antes estaba en left: 11%, ahora lo dejamos en 0 */
-        background-color: #00ffea;
+        background-color: #123340;
         transform-origin: bottom left;
         transition: transform 0.3s ease-out;
     }
