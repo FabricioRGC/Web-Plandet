@@ -534,17 +534,78 @@
         /*transform-origin: bottom left;*/
     }
 
-    .underline2 {
+
+
+
+
+
+
+
+
+
+    .card h5 {
         display: inline-block;
-        border-bottom: 2px solid rgb(75, 69, 69) !important; /* Ajusta el grosor y color */
-        padding-bottom: 2px; /* Espacio entre el texto y la línea */
+        position: relative;
+        padding-bottom: 5px;
+        background: transparent; /* Evita que se vea un fondo inesperado */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: inherit; /* Mantiene el color normal antes del hover */
+        transition: background 0.4s ease-in-out, -webkit-text-fill-color 0.4s ease-in-out;
+    }
+    
+    .card h5:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #00ffea;
+        transform-origin: bottom left;
+        transition: transform 0.4s ease-in-out;
+    }
+    
+    .card:hover h5 {
+        background: linear-gradient(90deg, #00ffea, #00ffea); /* Aplica solo en hover */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .card:hover h5:after {
+        transform: scaleX(1);
     }
     
 
-    .card:hover h5 {
-        background:  #ff6600; /* Cambia los colores según lo necesites */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: 0.4s ease-in-out;
-    }
 
+
+
+
+
+
+
+
+
+    .underline2 {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 5px; /* Ajusta si es necesario */
+    }
+    
+    .underline2:after {
+        content: '';
+        position: absolute;
+        width: 100%; /* Antes tenía 80%, prueba con 100% */
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0; /* Antes estaba en left: 11%, ahora lo dejamos en 0 */
+        background-color: #00ffea;
+        transform-origin: bottom left;
+        transition: transform 0.3s ease-out;
+    }
+    
+    .underline2:hover:after {
+        transform: scaleX(1);
+    }
+    

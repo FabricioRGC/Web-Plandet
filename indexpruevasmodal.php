@@ -216,7 +216,7 @@
                         </span>
                     </div>
                     <div class="">
-                        <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Geomática</h5>
+                        <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
                         <p>Gestiona y analiza información geoespacial con SIG, teledetección y cartografía digital. Su labor facilita decisiones en ordenamiento territorial, catastro y gestión ambiental, asegurando bases de datos precisas para proyectos de infraestructura y urbanismo.</p>
                         <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
                     </div>
@@ -229,9 +229,11 @@
                             <i class="fas fa-map"></i>
                         </span>
                     </div>
-                    <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Planificación</h5>
-                    <p>Diseña estrategias para el desarrollo sostenible, formulando planes y evaluando proyectos. Optimiza recursos, prioriza inversiones y alinea iniciativas con normativas, contribuyendo al crecimiento ordenado y al bienestar social.</p>
-                    <a href="#" class="text-warning text-decoration-none fw-bold">menos →</a>
+                    <div>
+                        <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
+                        <p>Diseña estrategias para el desarrollo sostenible, formulando planes y evaluando proyectos. Optimiza recursos, prioriza inversiones y alinea iniciativas con normativas, contribuyendo al crecimiento ordenado y al bienestar social.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-bold">menos →</a>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-4 d-flex">
@@ -241,9 +243,11 @@
                             <i class="fas fa-draw-polygonv"></i>
                         </span>
                     </div>
-                    <h5 class="fw-bold text-left text-decoration-underline">Subgerencia Titulación</h5>
-                    <p>Se encarga de regularizar y formalizar la propiedad de tierras, asegurando la entrega legal y transparente de títulos. Realiza estudios técnicos, jurídicos y sociales para validar terrenos y colabora con entidades para agilizar los procesos administrativos.</p>
-                    <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+                    <div>
+                        <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
+                        <p>Se encarga de regularizar y formalizar la propiedad de tierras, asegurando la entrega legal y transparente de títulos. Realiza estudios técnicos, jurídicos y sociales para validar terrenos y colabora con entidades para agilizar los procesos administrativos.</p>
+                        <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+                    </div>
                 </div>
             </div>
         </div>
