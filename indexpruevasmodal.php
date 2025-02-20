@@ -202,51 +202,108 @@
 
 
 
-    <div class="container-lg mt-4">
-        <div class="text-center">
-            <h2 class="fw-bold">Subgerencia</h2>
-            <p>(PLANDET)</p>
-        </div>
+    <div class="container mt-5">
         <div class="row gy-4">
-            <div class="col-12 col-lg-4 d-flex">
-                <div class="card shadow-sm p-4 w-100">
-                    <div class="text-left mb-3">
-                        <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-globe" style="color:#4B8976;"></i>
-                        </span>
-                    </div>
-                    <div class="">
-                        <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
-                        <p>Gestiona y analiza información geoespacial con SIG, teledetección y cartografía digital. Su labor facilita decisiones en ordenamiento territorial, catastro y gestión ambiental, asegurando bases de datos precisas para proyectos de infraestructura y urbanismo.</p>
-                        <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+            <!-- Tarjeta 1 -->
+            <div class="col-12 col-lg-4">
+                <div class="flip-container" id="card1">
+                    <div class="flipper">
+                        <div class="card shadow-sm p-4 front">
+                            <h5 class="fw-bold text-center">Subgerencia Titulación</h5>
+                            <p>Se encarga de regularizar la propiedad de tierras...</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="tramites1">
+                            <h5 class="fw-bold text-center">Trámites</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Opción 1</button>
+                                <button class="btn btn-outline-warning">Opción 2</button>
+                                <button class="btn btn-outline-warning">Opción 3</button>
+                                <button class="btn btn-outline-warning">Opción 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card1')">Volver</a>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="servicios1">
+                            <h5 class="fw-bold text-center">Servicios</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Servicio 1</button>
+                                <button class="btn btn-outline-warning">Servicio 2</button>
+                                <button class="btn btn-outline-warning">Servicio 3</button>
+                                <button class="btn btn-outline-warning">Servicio 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card1')">Volver</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 d-flex">
-                <div class="card shadow-sm p-4 w-100">
-                    <div class="text-left mb-3">
-                        <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-map" style="color:#4B8976;"></i>
-                        </span>
-                    </div>
-                    <div>
-                        <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
-                        <p>Diseña estrategias para el desarrollo sostenible, formulando planes y evaluando proyectos. Optimiza recursos, prioriza inversiones y alinea iniciativas con normativas, contribuyendo al crecimiento ordenado y al bienestar social.</p>
-                        <a href="#" class="text-warning text-decoration-none fw-bold">menos →</a>
+            <div class="col-12 col-lg-4">
+                <div class="flip-container" id="card2">
+                    <div class="flipper">
+                        <div class="card shadow-sm p-4 front">
+                            <h5 class="fw-bold text-center">Subgerencia Titulación</h5>
+                            <p>Se encarga de regularizar la propiedad de tierras...</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="tramites2">
+                            <h5 class="fw-bold text-center">Trámites</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Opción 1</button>
+                                <button class="btn btn-outline-warning">Opción 2</button>
+                                <button class="btn btn-outline-warning">Opción 3</button>
+                                <button class="btn btn-outline-warning">Opción 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card2')">Volver</a>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="servicios2">
+                            <h5 class="fw-bold text-center">Servicios</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Servicio 1</button>
+                                <button class="btn btn-outline-warning">Servicio 2</button>
+                                <button class="btn btn-outline-warning">Servicio 3</button>
+                                <button class="btn btn-outline-warning">Servicio 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card2')">Volver</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4 d-flex">
-                <div class="card shadow-sm p-4 w-100">
-                    <div class="text-left mb-3">
-                        <span class="bg-light p-3 rounded-circle d-inline-block">
-                            <i class="fas fa-draw-polygon" style="color:#4B8976;"></i>
-                        </span>
-                    </div>
-                    <div>
-                        <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
-                        <p>Se encarga de regularizar y formalizar la propiedad de tierras, asegurando la entrega legal y transparente de títulos. Realiza estudios técnicos, jurídicos y sociales para validar terrenos y colabora con entidades para agilizar los procesos administrativos.</p>
-                        <a href="#" class="text-warning text-decoration-none fw-bold">mas →</a>
+            <div class="col-12 col-lg-4">
+                <div class="flip-container" id="card3">
+                    <div class="flipper">
+                        <div class="card shadow-sm p-4 front">
+                            <h5 class="fw-bold text-center">Subgerencia Titulación</h5>
+                            <p>Se encarga de regularizar la propiedad de tierras...</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
+                                <a href="#" class="text-warning fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="tramites3">
+                            <h5 class="fw-bold text-center">Trámites</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Opción 1</button>
+                                <button class="btn btn-outline-warning">Opción 2</button>
+                                <button class="btn btn-outline-warning">Opción 3</button>
+                                <button class="btn btn-outline-warning">Opción 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card3')">Volver</a>
+                        </div>
+                        <div class="card shadow-sm p-4 back" id="servicios3">
+                            <h5 class="fw-bold text-center">Servicios</h5>
+                            <div class="grid-container">
+                                <button class="btn btn-outline-warning">Servicio 1</button>
+                                <button class="btn btn-outline-warning">Servicio 2</button>
+                                <button class="btn btn-outline-warning">Servicio 3</button>
+                                <button class="btn btn-outline-warning">Servicio 4</button>
+                            </div>
+                            <a href="#" class="text-warning fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card3')">Volver</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,6 +438,7 @@
                 }
             }
         });
+
     </script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>

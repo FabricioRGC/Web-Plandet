@@ -281,6 +281,18 @@ document.querySelector('.animated-background').addEventListener('mouseout', () =
     console.log('Cursor fuera del elemento');
 });
 //----------------------------------------------------------------------------------------------------------------------------
+function flipCard(event, cardId, sectionId) {
+    event.preventDefault();
+    document.getElementById(cardId).classList.add('flipped');
+    document.querySelectorAll(`#${cardId} .back`).forEach(el => el.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+function flipBack(event, cardId) {
+    event.preventDefault();
+    document.getElementById(cardId).classList.remove('flipped');
+    document.querySelectorAll(`#${cardId} .back`).forEach(el => el.style.display = 'none');
+}
 //----------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------------------------------------------
