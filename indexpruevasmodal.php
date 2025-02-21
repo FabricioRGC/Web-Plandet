@@ -201,54 +201,64 @@
 
 
 
-    <div class="container mt-2">
-        <div class="row gy-4">
-            <!-- Tarjeta 1 -->
-            <div class="col-12 col-lg-4">
+    <div class="container-xxl" style="height: auto; min-height: 450px;">
+        <div class="text-center">
+            <h2 class="fw-bold">Subgerencia</h2>
+            <p>(PLANDET)</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-4" style="height: 360px;">
                 <div class="flip-container" id="card1">
                     <div class="flipper">
-                        <div class="card shadow-sm p-4 front">
+                        <div class="card front p-3">
                             <div class="text-left mb-3">
                                 <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-globe" whith=30px></i>
+                                    <i class="fas fa-globe"></i>
                                 </span>
                             </div>
-                            <div class="">
+                            <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
-                                <p>Gestiona y analiza información geoespacial con SIG, teledetección y cartografía digital. Su labor facilita decisiones en ordenamiento territorial, catastro y gestión ambiental, asegurando bases de datos precisas para proyectos de infraestructura y urbanismo.</p>
+                                <p>Gestiona y analiza información geoespacial con SIG, 
+                                    teledetección y cartografía digital. Su labor 
+                                    facilita decisiones en ordenamiento territorial, 
+                                    catastro y gestión ambiental, asegurando bases de 
+                                    datos precisas para proyectos de infraestructura y 
+                                    urbanismo.</p>
                             </div>
                             <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
+                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
                             </div>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="tramites1">
+                        <div class="card back p-3" id="tramites1">
                             <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Opción 1</button>
-                                <button class="btn btn-outline-custom">Opción 2</button>
-                                <button class="btn btn-outline-custom">Opción 3</button>
-                                <button class="btn btn-outline-custom">Opción 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card1')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="servicios1">
+                        <div class="card back p-3" id="servicios1">
                             <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Servicio 1</button>
-                                <button class="btn btn-outline-custom">Servicio 2</button>
-                                <button class="btn btn-outline-custom">Servicio 3</button>
-                                <button class="btn btn-outline-custom">Servicio 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card1')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" style="height: 360px;">
                 <div class="flip-container" id="card2">
                     <div class="flipper">
-                        <div class="card shadow-sm p-4 front">
+                        <div class="card front p-3">
                             <div class="text-left mb-3">
                                 <span class="bg-light p-3 rounded-circle d-inline-block">
                                     <i class="fas fa-map"></i>
@@ -256,40 +266,46 @@
                             </div>
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
-                                <p>Diseña estrategias para el desarrollo sostenible, formulando planes y evaluando proyectos. Optimiza recursos, prioriza inversiones y alinea iniciativas con normativas, contribuyendo al crecimiento ordenado y al bienestar social.</p>                            
+                                <p>Diseña estrategias para el desarrollo sostenible, 
+                                    formulando planes y evaluando proyectos. Optimiza 
+                                    recursos, prioriza inversiones y alinea iniciativas 
+                                    con normativas, contribuyendo al crecimiento ordenado 
+                                    y al bienestar social.</p>                            
                             </div>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
                                 <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
                             </div>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="tramites2">
+                        <div class="card back p-3" id="tramites2">
                             <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Opción 1</button>
-                                <button class="btn btn-outline-custom">Opción 2</button>
-                                <button class="btn btn-outline-custom">Opción 3</button>
-                                <button class="btn btn-outline-custom">Opción 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card2')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="servicios2">
+                        <div class="card back p-3" id="servicios2">
                             <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Servicio 1</button>
-                                <button class="btn btn-outline-custom">Servicio 2</button>
-                                <button class="btn btn-outline-custom">Servicio 3</button>
-                                <button class="btn btn-outline-custom">Servicio 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card2')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4" style="height: 360px;">
                 <div class="flip-container" id="card3">
                     <div class="flipper">
-                        <div class="card shadow-sm p-4 front">
+                        <div class="card front p-3">
                             <div class="text-left mb-3">
                                 <span class="bg-light p-3 rounded-circle d-inline-block">
                                     <i class="fas fa-draw-polygon"></i>
@@ -297,45 +313,99 @@
                             </div>
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
-                                <p>Se encarga de regularizar y formalizar la propiedad de tierras, asegurando la entrega legal y transparente de títulos. Realiza estudios técnicos, jurídicos y sociales para validar terrenos y colabora con entidades para agilizar los procesos administrativos.</p>
+                                <p>Se encarga de regularizar y formalizar la propiedad 
+                                    de tierras, asegurando la entrega legal y transparente 
+                                    de títulos. Realiza estudios técnicos, jurídicos y 
+                                    sociales para validar terrenos y colabora con entidades 
+                                    para agilizar los procesos administrativos.</p>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
                                 <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
                             </div>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="tramites3">
+                        <div class="card back p-3" id="tramites3">
                             <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Opción 1</button>
-                                <button class="btn btn-outline-custom">Opción 2</button>
-                                <button class="btn btn-outline-custom">Opción 3</button>
-                                <button class="btn btn-outline-custom">Opción 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3" onclick="flipBack(event, 'card3')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
                         </div>
-                        <div class="card shadow-sm p-4 back" id="servicios3">
+                        <div class="card back p-3" id="servicios3">
                             <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container">
-                                <button class="btn btn-outline-custom">Servicio 1</button>
-                                <button class="btn btn-outline-custom">Servicio 2</button>
-                                <button class="btn btn-outline-custom">Servicio 3</button>
-                                <button class="btn btn-outline-custom">Servicio 4</button>
+                            <div class="grid-container d-flex flex-column">
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" onclick="flipBack(event, 'card3')">Volver</a>
+                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modalContent" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Requerimientos</h4>
+                    <p id="requerimientos"></p>
+                    <h4>Tiempos de Entrega</h4>
+                    <p id="tiempos"></p>
+                    <h4>Procedimiento</h4>
+                    <div class="accordion" id="pasosAccordion"></div>
+                    <h4>Recomendaciones</h4>
+                    <p id="recomendaciones"></p>
+                    <h4>Formatos</h4>
+                    <div class="Formatos" id="visor"></div>
+                    <div class="container-xxl">
+                        <div class="row g-4 text-center">
+                            <div id="f01" class="col-12 col-lg-4">
+                                <div class="border p-3">
+                                    <p id="text" class="fw-bold"></p>
+                                    <a id="filedowload" href="#" download>
+                                        <p id="dowload" class="text-center" class="btn btn-primary w-100 mt-2"></p>
+                                    </a>  
+                                </div>
+                            </div>
+                            <div id="f02" class="col-12 col-lg-4">
+                                <div class="border p-3">
+                                    <p id="text2" class="fw-bold"></p>
+                                    <a id="filedowload2" href="#" download>
+                                        <p id="dowload2" class="text-center" class="btn btn-primary w-100 mt-2"></p>
+                                    </a>  
+                                </div>
+                            </div>
+                            <div id="f03" class="col-12 col-lg-4">
+                                <div class="border p-3">
+                                    <p id="text3" class="fw-bold"></p>
+                                    <a id="filedowload3" href="#" download>
+                                        <p id="dowload3" class="text-center" class="btn btn-primary w-100 mt-2"></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        </div>
 
     <style>
-        .card{
-            height: 350px;
-        }
         .container{
-            height: 400px;
+            height: 350px;
+            height: auto;
         }
 
         .flip-container {
@@ -343,7 +413,7 @@
         }
 
         .card {
-            min-height: 210px; /* Para que todas las caras tengan la misma altura */
+            min-height: 350px; /* Para que todas las caras tengan la misma altura */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -354,6 +424,7 @@
             transition: transform 0.6s;
             transform-style: preserve-3d;
             position: relative;
+
         }
 
         .flip-container.flipped .flipper {
@@ -363,19 +434,24 @@
         .front, .back {
             position: absolute;
             width: 100%;
-            backface-visibility: hidden;
         }
 
         .back {
             transform: rotateY(180deg);
             display: none;
+            text-align: center;
+        }
+
+        .flip-container.flipped .back {
+            visibility: visible;
         }
 
         .grid-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            margin-top: 15px;
+            max-height: 220px; /* Ajusta este valor según lo que necesites */
+            overflow-y: auto; /* Agrega el scroll solo cuando sea necesario */
+            padding-right: 5px; /* Para evitar que el scroll tape el contenido */
         }
 
         .text-custom {
@@ -424,56 +500,6 @@
                     <h4 style="border-radius: 5px; padding: 2px; background-color:rgb(255, 255, 255);">Servicios</h4>
                     <ul id="servicios-list" class="list-group"></ul>
                 </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="modalContent" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalTitle"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h4>Requerimientos</h4>
-                        <p id="requerimientos"></p>
-                        <h4>Tiempos de Entrega</h4>
-                        <p id="tiempos"></p>
-                        <h4>Procedimiento</h4>
-                        <div class="accordion" id="pasosAccordion"></div>
-                        <h4>Recomendaciones</h4>
-                        <p id="recomendaciones"></p>
-                        <h4>Formatos</h4>
-                        <div class="Formatos" id="visor"></div>
-                        <div class="container-xxl">
-                            <div class="row g-4 text-center">
-                                <div id="f01" class="col-12 col-lg-4">
-                                    <div class="border p-3">
-                                        <p id="text" class="fw-bold"></p>
-                                        <a id="filedowload" href="#" download>
-                                            <p id="dowload" class="text-center" class="btn btn-primary w-100 mt-2"></p>
-                                        </a>  
-                                    </div>
-                                </div>
-                                <div id="f02" class="col-12 col-lg-4">
-                                    <div class="border p-3">
-                                        <p id="text2" class="fw-bold"></p>
-                                        <a id="filedowload2" href="#" download>
-                                            <p id="dowload2" class="text-center" class="btn btn-primary w-100 mt-2"></p>
-                                        </a>  
-                                    </div>
-                                </div>
-                                <div id="f03" class="col-12 col-lg-4">
-                                    <div class="border p-3">
-                                        <p id="text3" class="fw-bold"></p>
-                                        <a id="filedowload3" href="#" download>
-                                            <p id="dowload3" class="text-center" class="btn btn-primary w-100 mt-2"></p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
                 </div>
             </div>
         </div>

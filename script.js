@@ -96,78 +96,60 @@ const tramitesServiciosData = {
 
 function showModal(tramite) {
     const data = tramitesServiciosData[tramite];
+    if (!data) {
+        console.error("No se encontró información para:", tramite);
+        return;
+    }
+
     document.getElementById("modalTitle").innerText = data.titulo;
     document.getElementById("requerimientos").innerText = data.requerimientos;
     document.getElementById("tiempos").innerText = data.tiempos;
     document.getElementById("recomendaciones").innerText = data.recomendaciones;
-    document.getElementById('filedowload').href = 'Archivos/' + data.archivo;
-    document.getElementById("text").innerText = data.nombre;
-    document.getElementById('filedowload2').href = 'Archivos/' + data.archivo2;
-    document.getElementById("text2").innerText = data.nombre2;
-    document.getElementById("dowload").innerText = "Descargar Formato";
-    document.getElementById('filedowload3').href = 'Archivos/' + data.archivo3;
-    document.getElementById("text3").innerText = data.nombre3;
-    if(data.archivo2 != null){
+
+    // Descargar Formato 1
+    document.getElementById('filedowload').href = data.archivo ? 'Archivos/' + data.archivo : "#";
+    document.getElementById("text").innerText = data.nombre || "Sin archivo";
+
+    // Descargar Formato 2 (Verificación antes de mostrar)
+    if (data.archivo2) {
+        document.getElementById("filedowload2").href = 'Archivos/' + data.archivo2;
+        document.getElementById("text2").innerText = data.nombre2;
         document.getElementById("dowload2").innerText = "Descargar Formato";
-        document.getElementById("f02").classList.remove("display-nome-update");
-    }
-    else{
-        document.getElementById("dowload2").innerText = "";
-        document.getElementById("f02").classList.add("display-nome-update");
-    }
-    if(data.archivo3 != null){
-        document.getElementById("dowload3").innerText = "Descargar Formato";
-        document.getElementById("f03").classList.remove("display-nome-update");
-    }
-    else{
-        document.getElementById("dowload3").innerText = "";
-        document.getElementById("f03").classList.add("display-nome-update");
+        document.getElementById("f02").style.display = "block";
+    } else {
+        document.getElementById("f02").style.display = "none";
     }
 
+    // Descargar Formato 3 (Verificación antes de mostrar)
+    if (data.archivo3) {
+        document.getElementById("filedowload3").href = 'Archivos/' + data.archivo3;
+        document.getElementById("text3").innerText = data.nombre3;
+        document.getElementById("dowload3").innerText = "Descargar Formato";
+        document.getElementById("f03").style.display = "block";
+    } else {
+        document.getElementById("f03").style.display = "none";
+    }
+
+    // Cargar pasos del trámite/servicio
     const accordion = document.getElementById("pasosAccordion");
-    accordion.innerHTML = data.pasos.map((paso, index) => `
-        <div class="paso-item" style="margin-left: 20px">
-            <h5 class="paso-titulo">Paso ${index + 1}</h5>
-            <p class="paso-descripcion">${paso.split(':')[1]}</p>
-        </div>
-    `).join('');
-    
+    accordion.innerHTML = data.pasos.map((paso, index) => {
+        return `
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading${index}">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${index}" aria-expanded="true">
+                        Paso ${index + 1}
+                    </button>
+                </h2>
+                <div id="collapse${index}" class="accordion-collapse collapse" data-bs-parent="#pasosAccordion">
+                    <div class="accordion-body">${paso}</div>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    // Mostrar el modal
     new bootstrap.Modal(document.getElementById("modalContent")).show();
 }
-
-function updateContent(gerencia) {
-    const descriptionElement = document.getElementById("description");
-    // Actualiza el contenido de la descripción
-    descriptionElement.innerHTML = `<p>${gerenciaData[gerencia].descripcion}</p>`;
-    
-    // Reinicia la animación:
-    // 1. Elimina la clase para reiniciar el estado
-    descriptionElement.classList.remove("slide-in-left");
-    // 2. Forzar un reflow para reiniciar la animación (esto es opcional pero recomendado)
-    void descriptionElement.offsetWidth;
-    // 3. Vuelve a agregar la clase para activar la animación
-    descriptionElement.classList.add("slide-in-left");
-    
-    // Actualiza la lista de trámites
-    document.getElementById("tramites-list").innerHTML = gerenciaData[gerencia].tramites.map(item => `
-        <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
-            ${item}
-        </li>
-    `).join('');
-
-    // Actualiza la lista de servicios
-    document.getElementById("servicios-list").innerHTML = gerenciaData[gerencia].servicios.map(item => `
-        <li class="list-group-item animated-background2" onclick="showModal('${item}')" style="cursor: pointer;">
-            ${item}
-        </li>
-    `).join('');
-}
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    updateContent('gerencia1');
-});
 //--------------------------------------------------------------------------------
 // Definir el visor de PDF
 const PDFViewer = {
