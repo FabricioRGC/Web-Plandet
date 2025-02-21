@@ -549,10 +549,6 @@
 
 
 
-    .card{
-        height: 800px;
-    }
-
     .card h5 {
         display: inline-block;
         position: relative;
@@ -626,42 +622,3 @@
 
 
 
-    .flip-container {
-        perspective: 1000px;
-    }
-
-    .card {
-        min-height: 210px; /* Para que todas las caras tengan la misma altura */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-
-    .flipper {
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        position: relative;
-    }
-
-    .flip-container.flipped .flipper {
-        transform: rotateY(180deg);
-    }
-
-    .front, .back {
-        position: absolute;
-        width: 100%;
-        backface-visibility: hidden;
-    }
-
-    .back {
-        transform: rotateY(180deg);
-        display: none;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-top: 15px;
-    }
