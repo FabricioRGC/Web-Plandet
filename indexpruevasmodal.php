@@ -207,7 +207,7 @@
             <p>(PLANDET)</p>
         </div>
         <div class="row">
-            <div class="col-12 col-lg-4" style="height: 360px;">
+            <div class="col-12 col-lg-4" style="height: 430px;">
                 <div class="flip-container" id="card1">
                     <div class="flipper">
                         <div class="card front">
@@ -256,25 +256,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" style="height: 360px;">
+            <div class="col-12 col-lg-4" style="height: 430px;">
                 <div class="flip-container" id="card2">
                     <div class="flipper">
-                        <div class="card front p-3">
+                        <div class="card front">
                             <div class="text-left">
                                 <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
                             </div>
-                            
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
-                                <p>Diseña estrategias para el desarrollo sostenible, 
-                                    formulando planes y evaluando proyectos. Optimiza 
-                                    recursos, prioriza inversiones y alinea iniciativas 
-                                    con normativas, contribuyendo al crecimiento ordenado 
-                                    y al bienestar social.</p>                            
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
+                            <div class="p-3">
+                                <div>
+                                    <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
+                                    <p>Diseña estrategias para el desarrollo sostenible, 
+                                        formulando planes y evaluando proyectos. Optimiza 
+                                        recursos, prioriza inversiones y alinea iniciativas 
+                                        con normativas, contribuyendo al crecimiento ordenado 
+                                        y al bienestar social.</p>                            
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
+                                </div>
                             </div>
                         </div>
                         <div class="card back p-3" id="tramites2">
@@ -302,24 +303,26 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-4" style="height: 360px;">
+            <div class="col-12 col-lg-4" style="height: 430px;">
                 <div class="flip-container" id="card3">
                     <div class="flipper">
-                        <div class="card front p-3">
+                        <div class="card front">
                             <div class="text-left">
                                 <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                             </div>
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
-                                <p>Se encarga de regularizar y formalizar la propiedad 
-                                    de tierras, asegurando la entrega legal y transparente 
-                                    de títulos. Realiza estudios técnicos, jurídicos y 
-                                    sociales para validar terrenos y colabora con entidades 
-                                    para agilizar los procesos administrativos.</p>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
+                            <div class="p-3">
+                                <div>
+                                    <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
+                                    <p>Se encarga de regularizar y formalizar la propiedad 
+                                        de tierras, asegurando la entrega legal y transparente 
+                                        de títulos. Realiza estudios técnicos, jurídicos y 
+                                        sociales para validar terrenos y colabora con entidades 
+                                        para agilizar los procesos administrativos.</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
+                                </div>
                             </div>
                         </div>
                         <div class="card back p-3" id="tramites3">
