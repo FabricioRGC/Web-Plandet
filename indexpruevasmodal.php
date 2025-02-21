@@ -201,7 +201,7 @@
 
 
 
-    <div class="container-xxl" style="height: auto; min-height: 450px;">
+    <div class="container-xxl" style="height: auto; min-height: 500px;">
         <div class="text-center">
             <h2 class="fw-bold">Subgerencia</h2>
             <p>(PLANDET)</p>
@@ -211,10 +211,8 @@
                 <div class="flip-container" id="card1">
                     <div class="flipper">
                         <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-globe"></i>
-                                </span>
+                            <div class="text-left">
+                                <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                             </div>
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
@@ -259,10 +257,8 @@
                 <div class="flip-container" id="card2">
                     <div class="flipper">
                         <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-map"></i>
-                                </span>
+                            <div class="text-left">
+                                <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
                             </div>
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
@@ -306,10 +302,8 @@
                 <div class="flip-container" id="card3">
                     <div class="flipper">
                         <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-draw-polygon"></i>
-                                </span>
+                            <div class="text-left">
+                                <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                             </div>
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
@@ -404,7 +398,7 @@
 
     <style>
         .container{
-            height: 350px;
+            height: 400px;
             height: auto;
         }
 
@@ -413,7 +407,7 @@
         }
 
         .card {
-            min-height: 350px; /* Para que todas las caras tengan la misma altura */
+            min-height: 400px; /* Para que todas las caras tengan la misma altura */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
