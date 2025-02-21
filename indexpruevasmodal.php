@@ -210,23 +210,26 @@
             <div class="col-12 col-lg-4" style="height: 360px;">
                 <div class="flip-container" id="card1">
                     <div class="flipper">
-                        <div class="card front p-3">
+                        <div class="card front">
                             <div class="text-left">
                                 <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                             </div>
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
-                                <p>Gestiona y analiza información geoespacial con SIG, 
-                                    teledetección y cartografía digital. Su labor 
-                                    facilita decisiones en ordenamiento territorial, 
-                                    catastro y gestión ambiental, asegurando bases de 
-                                    datos precisas para proyectos de infraestructura y 
-                                    urbanismo.</p>
+                            <div class="p-3">
+                                <div>
+                                    <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
+                                    <p>Gestiona y analiza información geoespacial con SIG, 
+                                        teledetección y cartografía digital. Su labor 
+                                        facilita decisiones en ordenamiento territorial, 
+                                        catastro y gestión ambiental, asegurando bases de 
+                                        datos precisas para proyectos de infraestructura y 
+                                        urbanismo.</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
-                            </div>
+                            
                         </div>
                         <div class="card back p-3" id="tramites1">
                             <h5 class="fw-bold text-center">Trámites</h5>
@@ -260,6 +263,7 @@
                             <div class="text-left">
                                 <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
                             </div>
+                            
                             <div>
                                 <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
                                 <p>Diseña estrategias para el desarrollo sostenible, 
