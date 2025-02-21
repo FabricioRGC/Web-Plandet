@@ -47,24 +47,6 @@ function showContent(section) {
     event.target.classList.add("active");
 }
 //--------------------------------------------------------------------------------
-const gerenciaData = {
-    "gerencia1": {
-        descripcion: "La subgerencia de Geomática se encarga de la gestión, análisis y representación de información geoespacial mediante tecnologías como los sistemas de información geográfica (SIG), teledetección y cartografía digital. Su función principal es optimizar la toma de decisiones en diversos ámbitos, como el ordenamiento territorial, el catastro y la gestión ambiental. Además, garantiza la actualización y precisión de bases de datos espaciales, facilitando la integración de información relevante para proyectos de infraestructura, urbanismo y conservación de recursos naturales.",
-        tramites: ["Trámite 1", "Trámite 2", "Trámite 3", "Trámite 4"],
-        servicios: ["Servicio 1", "Servicio 2", "Servicio 3", "Servicio 4"]
-    },
-    "gerencia2": {
-        descripcion: "La subgerencia de Planificación tiene como objetivo coordinar y formular estrategias para el desarrollo sostenible de territorios y organizaciones. Se encarga de diseñar planes estratégicos, evaluar proyectos y garantizar la alineación de las iniciativas con las normativas y objetivos institucionales. También trabaja en la identificación de necesidades, priorización de inversiones y optimización de recursos para el crecimiento ordenado y eficiente. Su labor es clave en la estructuración de políticas públicas y programas que impulsan el bienestar económico y social de una comunidad.",
-        tramites: ["Trámite 5", "Trámite 6", "Trámite 7", "Trámite 8"],
-        servicios: ["Servicio 5", "Servicio 6", "Servicio 7", "Servicio 8"]
-    },
-    "gerencia3": {
-        descripcion: "La subgerencia de Titulación se dedica a la regularización y formalización de la propiedad de tierras y bienes inmuebles. Su principal responsabilidad es asegurar la entrega de títulos de propiedad de manera transparente y legal, garantizando la seguridad jurídica a los propietarios. Para ello, realiza estudios técnicos, jurídicos y sociales que permiten la validación y saneamiento de terrenos. Además, colabora con entidades gubernamentales y comunidades para agilizar los procesos administrativos y contribuir al acceso equitativo a la propiedad, promoviendo el desarrollo urbano y rural de manera ordenada.",
-        tramites: ["Trámite 9", "Trámite 10", "Trámite 11", "Trámite 12"],
-        servicios: ["Servicio 9", "Servicio 10", "Servicio 11", "Servicio 12"]
-    }
-};
-
 const tramitesServiciosData = {
     "Trámite 1": {
         titulo: "Trámite 1 de Geomática",
