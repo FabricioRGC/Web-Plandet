@@ -382,6 +382,9 @@
             color: #4B8976 !important;
             text-decoration: none;
         }
+        .text-custom:hover {
+            color:rgb(39, 65, 57) !important;
+        }
         .btn-outline-custom {
             border-color: #4B8976 !important;
             color: #4B8976 !important;
