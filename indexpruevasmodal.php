@@ -117,7 +117,8 @@
     <section id="quienes-somos" style="border: 1px solid #fff">
         <div class="container-xxl mt-5" style="margin-bottom: 20px !important;">
             <div class="row">
-                <div class="col-md-3" style="margin-bottom: 20px !important;  border: #0e2330;">
+                <!-- Barra lateral con slide-left -->
+                <div class="col-md-3 sidebar-container hidden slide-left" style="margin-bottom: 20px !important; border: #0e2330;">
                     <div class="sidebar">
                         <a href="javascript:void(0);" class="active" onclick="showContent('quienes-somos')">¿Quiénes Somos?</a>
                         <a href="javascript:void(0);" onclick="showContent('mision')">Misión</a>
@@ -125,7 +126,8 @@
                         <a href="javascript:void(0);" onclick="showContent('valores')">Valores</a>
                     </div>
                 </div>
-                <div class="col-md-9">
+                <!-- Contenido con slide-right -->
+                <div class="col-md-9 content-container hidden slide-right">
                     <div class="content-box" id="content" style="background-color: #F2F2F2">
                         <h2 class="text-center">¿Quiénes Somos?</h2>
                         <h4 class="text-center text-secondary">(PLANDET)</h4>
@@ -137,8 +139,6 @@
             </div>
         </div>
     </section>
-
-
     <section id="dashboard">
         <div class="container-lg mt-2" style="border-top: 1px solid #123340;">
             <div class="row">
@@ -535,7 +535,22 @@
         </div>
     </footer>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target); // Dejar de observar una vez animado
+                    }
+                });
+            }, {
+                threshold: 0.3, // Se activará cuando el 30% del elemento sea visible
+            });
 
+            document.querySelectorAll(".sidebar-container, .content-container").forEach((el) => {
+                observer.observe(el);
+            });
+        });
         document.addEventListener("click", function (event) {
             const navbarToggler = document.querySelector(".navbar-toggler");
             const navbarCollapse = document.querySelector(".navbar-collapse");

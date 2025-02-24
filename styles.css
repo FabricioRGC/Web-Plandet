@@ -622,3 +622,48 @@
 
 
 
+
+
+
+    /* Ocultar elementos antes de que entren en la vista */
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Animaciones cuando los elementos están visibles */
+.show.slide-left {
+    transform: translateX(0);
+    opacity: 1;
+    animation: slideInLeft2 0.5s ease-out;
+}
+
+.show.slide-right {
+    transform: translateX(0);
+    opacity: 1;
+    animation: slideInRight2 0.5s ease-out;
+}
+
+/* Definir animaciones */
+@keyframes slideInLeft2 {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
