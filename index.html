@@ -127,7 +127,7 @@
                     </div>
                 </div>
                 <!-- Contenido con slide-right -->
-                <div class="col-md-9 content-container hidden slide-right">
+                <div class="col-md-9 content-contain hidden slide-right">
                     <div class="content-box" id="content" style="background-color: #F2F2F2">
                         <h2 class="text-center">¿Quiénes Somos?</h2>
                         <h4 class="text-center text-secondary">(PLANDET)</h4>
@@ -142,8 +142,8 @@
     <section id="dashboard">
         <div class="container-lg mt-2" style="border-top: 1px solid #123340;">
             <div class="row">
-                <h2 class="fw-bold mb-4 text-center" style="padding-top: 15px">CONOCE PLANDET</h2>
-                <div class="col-12 col-lg-6 mb-4 d-lg-block">
+                <h2 class="fw-bold mb-4 text-center sidebar-container hidden slide-left" style="padding-top: 15px">CONOCE PLANDET</h2>
+                <div class="col-12 col-lg-6 mb-4 d-lg-block sidebar-container hidden slide-left">
                     <div class="d-flex justify-content-center mb-3 border-gradient">
                         <iframe 
                             src="https://www.google.com/maps?q=loc:-8.107384986498031,-79.03034909152134&z=17&output=embed" 
@@ -156,7 +156,7 @@
                         </iframe>
                     </div>                
                 </div>
-                <div class="col-12 col-lg-6" style="padding-left: 50px; padding-right: 50px; margin-bottom: 40px">
+                <div class="col-12 col-lg-6 content-contain hidden slide-right" style="padding-left: 50px; padding-right: 50px; margin-bottom: 40px">
                     <div class="row gy-4">
                         <div class="col-12 col-lg-12 justifi text-center">
                         </div>
@@ -206,151 +206,154 @@
             <h2 class="fw-bold">Subgerencia</h2>
             <p>(PLANDET)</p>
         </div>
-        <div class="row">
-            <div class="col-12 col-lg-4" style="height: 430px;">
-                <div class="flip-container" id="card1">
-                    <div class="flipper">
-                        <div class="card front">
-                            <div class="text-left">
-                                <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
-                            </div>
-                            <div class="p-3">
-                                <div>
-                                    <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
-                                    <p>Gestiona y analiza información geoespacial con SIG, 
-                                        teledetección y cartografía digital. Su labor 
-                                        facilita decisiones en ordenamiento territorial, 
-                                        catastro y gestión ambiental, asegurando bases de 
-                                        datos precisas para proyectos de infraestructura y 
-                                        urbanismo.</p>
+        <div>
+            <div class="row justify-content-center content-contain hidden slide-right">
+                <div class="col-12 col-lg-4" style="height: 430px;">
+                    <div class="flip-container" id="card1">
+                        <div class="flipper">
+                            <div class="card front">
+                                <div class="text-left">
+                                    <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
-                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                                <div class="p-3">
+                                    <div>
+                                        <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
+                                        <p>Gestiona y analiza información geoespacial con SIG, 
+                                            teledetección y cartografía digital. Su labor 
+                                            facilita decisiones en ordenamiento territorial, 
+                                            catastro y gestión ambiental, asegurando bases de 
+                                            datos precisas para proyectos de infraestructura y 
+                                            urbanismo.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
+                                        <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            
-                        </div>
-                        <div class="card back p-3" id="tramites1">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                            <div class="card back p-3" id="tramites1">
+                                <h5 class="fw-bold text-center">Trámites</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios1">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                            <div class="card back p-3" id="servicios1">
+                                <h5 class="fw-bold text-center">Servicios</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4" style="height: 430px;">
-                <div class="flip-container" id="card2">
-                    <div class="flipper">
-                        <div class="card front">
-                            <div class="text-left">
-                                <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
-                            </div>
-                            <div class="p-3">
-                                <div>
-                                    <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
-                                    <p>Diseña estrategias para el desarrollo sostenible, 
-                                        formulando planes y evaluando proyectos. Optimiza 
-                                        recursos, prioriza inversiones y alinea iniciativas 
-                                        con normativas, contribuyendo al crecimiento ordenado 
-                                        y al bienestar social.</p>                            
+                <div class="col-12 col-lg-4" style="height: 430px;">
+                    <div class="flip-container" id="card2">
+                        <div class="flipper">
+                            <div class="card front">
+                                <div class="text-left">
+                                    <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
-                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
+                                <div class="p-3">
+                                    <div>
+                                        <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
+                                        <p>Diseña estrategias para el desarrollo sostenible, 
+                                            formulando planes y evaluando proyectos. Optimiza 
+                                            recursos, prioriza inversiones y alinea iniciativas 
+                                            con normativas, contribuyendo al crecimiento ordenado 
+                                            y al bienestar social.</p>                            
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
+                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card back p-3" id="tramites2">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                            <div class="card back p-3" id="tramites2">
+                                <h5 class="fw-bold text-center">Trámites</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios2">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                            <div class="card back p-3" id="servicios2">
+                                <h5 class="fw-bold text-center">Servicios</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-lg-4" style="height: 430px;">
-                <div class="flip-container" id="card3">
-                    <div class="flipper">
-                        <div class="card front">
-                            <div class="text-left">
-                                <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
-                            </div>
-                            <div class="p-3">
-                                <div>
-                                    <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
-                                    <p>Se encarga de regularizar y formalizar la propiedad 
-                                        de tierras, asegurando la entrega legal y transparente 
-                                        de títulos. Realiza estudios técnicos, jurídicos y 
-                                        sociales para validar terrenos y colabora con entidades 
-                                        para agilizar los procesos administrativos.</p>
+                <div class="col-12 col-lg-4" style="height: 430px;">
+                    <div class="flip-container" id="card3">
+                        <div class="flipper">
+                            <div class="card front">
+                                <div class="text-left">
+                                    <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
                                 </div>
-                                <div class="d-flex justify-content-between">
-                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
-                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
+                                <div class="p-3">
+                                    <div>
+                                        <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
+                                        <p>Se encarga de regularizar y formalizar la propiedad 
+                                            de tierras, asegurando la entrega legal y transparente 
+                                            de títulos. Realiza estudios técnicos, jurídicos y 
+                                            sociales para validar terrenos y colabora con entidades 
+                                            para agilizar los procesos administrativos.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
+                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card back p-3" id="tramites3">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                            <div class="card back p-3" id="tramites3">
+                                <h5 class="fw-bold text-center">Trámites</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios3">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                            <div class="card back p-3" id="servicios3">
+                                <h5 class="fw-bold text-center">Servicios</h5>
+                                <div class="grid-container d-flex flex-column">
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 2</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 3</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Servicio 4</button>
+                                </div>
+                                <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
+                                style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
                             </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
     </div>
     <div class="modal fade" id="modalContent" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -404,6 +407,12 @@
         </div>
 
     <style>
+
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
         .container{
             height: 400px;
             height: auto;
@@ -422,6 +431,7 @@
 
 
         .flipper {
+            height: 100%;
             transition: transform 0.6s;
             transform-style: preserve-3d;
             position: relative;
@@ -438,6 +448,7 @@
         }
 
         .back {
+            visibility: hidden;
             transform: rotateY(180deg);
             display: none;
             text-align: center;
@@ -547,7 +558,7 @@
                 threshold: 0.3, // Se activará cuando el 30% del elemento sea visible
             });
 
-            document.querySelectorAll(".sidebar-container, .content-container").forEach((el) => {
+            document.querySelectorAll(".sidebar-container, .content-contain").forEach((el) => {
                 observer.observe(el);
             });
         });
