@@ -48,7 +48,7 @@ function showContent(section) {
 }
 //--------------------------------------------------------------------------------
 const tramitesServiciosData = {
-    "Trámite 1": {
+    "Tramite 1": {
         titulo: "Trámite 1 de Geomática",
         requerimientos: "Documentos necesarios para el trámite.",
         tiempos: "Plazos de entrega detallados.",
@@ -58,8 +58,8 @@ const tramitesServiciosData = {
         nombre: "Harry-Potter-y-la-piedra-filosofal",
         archivo2: null, 
         nombre2: null,
-        archivo3: null, 
-        nombre3: null
+        archivo3: "ElPrimerAmor.pdf", 
+        nombre3: "ElPrimerAmor"
     },
     "Servicio 1": {
         titulo: "Servicio 1 de Geomática",
@@ -89,8 +89,14 @@ function showModal(tramite) {
     document.getElementById("recomendaciones").innerText = data.recomendaciones;
 
     // Descargar Formato 1
-    document.getElementById('filedowload').href = data.archivo ? 'Archivos/' + data.archivo : "#";
-    document.getElementById("text").innerText = data.nombre || "Sin archivo";
+    if (data.archivo) {
+        document.getElementById("filedowload").href = 'Archivos/' + data.archivo;
+        document.getElementById("text").innerText = data.nombre;
+        document.getElementById("dowload").innerText = "Descargar Formato";
+        document.getElementById("f01").style.display = "block";
+    } else {
+        document.getElementById("f01").style.display = "none";
+    }
 
     // Descargar Formato 2 (Verificación antes de mostrar)
     if (data.archivo2) {

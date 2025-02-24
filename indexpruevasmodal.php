@@ -235,7 +235,7 @@
                             <div class="card back p-3" id="tramites1">
                                 <h5 class="fw-bold text-center">Trámites</h5>
                                 <div class="grid-container d-flex flex-column">
-                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 1</button>
+                                    <button class="btn btn-outline-custom my-1" onclick="showModal('Tramite 1')">Opción 1</button>
                                     <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 2</button>
                                     <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 3</button>
                                     <button class="btn btn-outline-custom my-1" onclick="showModal('Servicio 1')">Opción 4</button>
