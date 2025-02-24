@@ -636,13 +636,13 @@
 .show.slide-left {
     transform: translateX(0);
     opacity: 1;
-    animation: slideInLeft2 0.5s ease-out;
+    animation: slideInLeft2 0.9s ease-out;
 }
 
 .show.slide-right {
     transform: translateX(0);
     opacity: 1;
-    animation: slideInRight2 0.5s ease-out;
+    animation: slideInRight2 0.9s ease-out;
 }
 
 /* Definir animaciones */
@@ -655,6 +655,59 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+@keyframes slideInRight2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.show.slide-right1 {
+    transform: translateX(0);
+    opacity: 1;
+    animation: slideInRight2 1.0s ease-out;
+}
+
+@keyframes slideInRight2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.show.slide-right2 {
+    transform: translateX(0);
+    opacity: 1;
+    animation: slideInRight2 1.3s ease-out;
+}
+
+@keyframes slideInRight2 {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.show.slide-right3 {
+    transform: translateX(0);
+    opacity: 1;
+    animation: slideInRight2 1.6s ease-out;
 }
 
 @keyframes slideInRight2 {

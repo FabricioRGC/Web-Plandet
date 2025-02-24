@@ -207,8 +207,8 @@
             <p>(PLANDET)</p>
         </div>
         <div>
-            <div class="row justify-content-center content-contain hidden slide-right">
-                <div class="col-12 col-lg-4" style="height: 430px;">
+            <div class="row">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right1" style="height: 430px;">
                     <div class="flip-container" id="card1">
                         <div class="flipper">
                             <div class="card front">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4" style="height: 430px;">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right2" style="height: 430px;">
                     <div class="flip-container" id="card2">
                         <div class="flipper">
                             <div class="card front">
@@ -304,7 +304,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4" style="height: 430px;">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right3" style="height: 430px;">
                     <div class="flip-container" id="card3">
                         <div class="flipper">
                             <div class="card front">
@@ -404,7 +404,7 @@
                 </div> 
             </div>
         </div>
-        </div>
+    </div>
 
     <style>
 
@@ -493,28 +493,7 @@
 
 
     <section id="tramites_y_servicios">
-        <div class="container-xxl mt-3" style="padding-bottom: 30px; border-top: 1px solid #123340; border-bottom: 1px solid #123340">
-            <h1 class="text-center mb-4" style="margin-top: 15px;">Trámites y Servicios</h1>
-            <div class="text-center mb-3">
-                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px;" onclick="updateContent('gerencia1')">Subgerencia Geomática</button>
-                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px" onclick="updateContent('gerencia2')">Subgerencia Planificación</button>
-                <button class="btn shadow mx-2 btn-PLANDET" style="margin-bottom: 10px" onclick="updateContent('gerencia3')">Subgerencia Titulación</button>
-            </div>
-            <div class="content-container">
-                <div style="width: 3% !important;">
-                </div>
-                <div class="description" id="description" style="margin-left: 3%; margin-right: 3%;background-color: #F2F2F2; border: 1px solid #123340">
-                    <p>Seleccione una subgerencia para ver más detalles.</p>
-                </div>
-                <div class="list-container text-center" style="margin-right: 3% !important; padding: 10px; border-radius: 10px; background: rgb(255, 255, 255); /* Ajusta según el fondo */">
-                    <h4 style="border-radius: 5px; padding: 2px; background-color:rgb(255, 255, 255);">Trámites</h4>
-                    <ul id="tramites-list" class="list-group mb-3"></ul>
-                    <h4 style="border-radius: 5px; padding: 2px; background-color:rgb(255, 255, 255);">Servicios</h4>
-                    <ul id="servicios-list" class="list-group"></ul>
-                </div>
-                </div>
-            </div>
-        </div>
+
     </section>
     <section id="WhatsApp">
         <div class="socialbar_whatsapp ">
