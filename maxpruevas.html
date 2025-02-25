@@ -2,240 +2,176 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjetas con Trámites y Servicios</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-
-
-    <div class="container-xxl" style="border: 1px solid red; height: auto; min-height: 450px;">
-        <div class="text-center" style="border: 1px solid red;">
-            <h2 class="fw-bold">Subgerencia</h2>
-            <p>(PLANDET)</p>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-4" style="height: 360px;">
-                <div class="flip-container" id="card1">
-                    <div class="flipper">
-                        <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-globe"></i>
-                                </span>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
-                                <p>Gestiona y analiza información geoespacial con SIG, 
-                                    teledetección y cartografía digital. Su labor 
-                                    facilita decisiones en ordenamiento territorial, 
-                                    catastro y gestión ambiental, asegurando bases de 
-                                    datos precisas para proyectos de infraestructura y 
-                                    urbanismo.</p>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
-                            </div>
-                        </div>
-                        <div class="card back p-3" id="tramites1">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1">Opción 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios1">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card1')">Volver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4" style="height: 360px;">
-                <div class="flip-container" id="card2">
-                    <div class="flipper">
-                        <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-map"></i>
-                                </span>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
-                                <p>Diseña estrategias para el desarrollo sostenible, 
-                                    formulando planes y evaluando proyectos. Optimiza 
-                                    recursos, prioriza inversiones y alinea iniciativas 
-                                    con normativas, contribuyendo al crecimiento ordenado 
-                                    y al bienestar social.</p>                            
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
-                            </div>
-                        </div>
-                        <div class="card back p-3" id="tramites2">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1">Opción 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios2">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card2')">Volver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4" style="height: 360px;">
-                <div class="flip-container" id="card3">
-                    <div class="flipper">
-                        <div class="card front p-3">
-                            <div class="text-left mb-3">
-                                <span class="bg-light p-3 rounded-circle d-inline-block">
-                                    <i class="fas fa-draw-polygon"></i>
-                                </span>
-                            </div>
-                            <div>
-                                <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
-                                <p>Se encarga de regularizar y formalizar la propiedad 
-                                    de tierras, asegurando la entrega legal y transparente 
-                                    de títulos. Realiza estudios técnicos, jurídicos y 
-                                    sociales para validar terrenos y colabora con entidades 
-                                    para agilizar los procesos administrativos.</p>
-                            </div>
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
-                                <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
-                            </div>
-                        </div>
-                        <div class="card back p-3" id="tramites3">
-                            <h5 class="fw-bold text-center">Trámites</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Opción 1</button>
-                                <button class="btn btn-outline-custom my-1">Opción 2</button>
-                                <button class="btn btn-outline-custom my-1">Opción 3</button>
-                                <button class="btn btn-outline-custom my-1">Opción 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
-                        </div>
-                        <div class="card back p-3" id="servicios3">
-                            <h5 class="fw-bold text-center">Servicios</h5>
-                            <div class="grid-container d-flex flex-column">
-                                <button class="btn btn-outline-custom my-1">Servicio 1</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 2</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 3</button>
-                                <button class="btn btn-outline-custom my-1">Servicio 4</button>
-                            </div>
-                            <a href="#" class="text-custom fw-bold d-block text-center mt-3 position-absolute bottom-0 start-50 translate-middle-x" 
-                            style="margin-bottom: 20px;" onclick="flipBack(event, 'card3')">Volver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noticias con Paginación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .container{
-            height: 400px;
-            height: auto;
+        .noticia-card {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #f8f9fa;
+            margin-bottom: 15px;
+            height: 250px; /* Altura fija */
+            overflow: hidden;
         }
-
-        .flip-container {
-            perspective: 1000px;
+        .noticia-card img {
+            width: 30%;
+            height: 100%; /* Llenar el contenedor */
+            object-fit: cover; /* Recortar sin deformar */
+            object-position: center center; /* Centrar imagen */
+            border-radius: 10px;
         }
-
-        .card {
-            height: 350px; /* Para que todas las caras tengan la misma altura */
-            display: block;
+        .noticia-texto {
+            width: 70%;
+            display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center;
         }
-
-
-        .flipper {
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            position: relative;
-
-        }
-
-        .flip-container.flipped .flipper {
-            transform: rotateY(180deg);
-        }
-
-        .front, .back {
-            position: absolute;
-            width: 100%;
-
-        }
-
-        .back {
-            transform: rotateY(180deg);
-            display: none;
-        }
-
-        .flip-container.flipped .back {
-            visibility: visible;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .text-custom {
-            color: #4B8976 !important;
+        .noticia-texto a {
+            font-size: 1.2rem;
+            font-weight: bold;
             text-decoration: none;
+            color: #007bff;
+            display: block;
         }
-        .text-custom:hover {
-            color:rgb(39, 65, 57) !important;
+        .noticia-texto a:hover {
+            text-decoration: underline;
         }
-        .btn-outline-custom {
-            border-color: #4B8976 !important;
-            color: #4B8976 !important;
-        }
-        .btn-outline-custom:hover {
-            background-color: #4B8976 !important;
-            color: white !important;
+        .noticia-texto .fecha {
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
     <script>
-        function flipCard(event, cardId, sectionId) {
-            event.preventDefault();
-            document.getElementById(cardId).classList.add('flipped');
-            document.querySelectorAll(`#${cardId} .back`).forEach(el => el.style.display = 'none');
-            document.getElementById(sectionId).style.display = 'block';
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const noticias = document.querySelectorAll(".noticia-card"); 
+            const noticiasPorPagina = 5;
+            let paginaActual = 1;
+            const totalPaginas = Math.ceil(noticias.length / noticiasPorPagina);
 
-        function flipBack(event, cardId) {
-            event.preventDefault();
-            document.getElementById(cardId).classList.remove('flipped');
-            document.querySelectorAll(`#${cardId} .back`).forEach(el => el.style.display = 'none');
-        }
+            function mostrarNoticias() {
+                noticias.forEach((noticia, index) => {
+                    noticia.style.display = (index >= (paginaActual - 1) * noticiasPorPagina && index < paginaActual * noticiasPorPagina) ? "flex" : "none";
+                });
+
+                actualizarPaginacion();
+            }
+
+            function actualizarPaginacion() {
+                const paginacion = document.getElementById("pagination");
+                paginacion.innerHTML = "";
+
+                // Botón "Anterior"
+                const prevBtn = document.createElement("li");
+                prevBtn.className = `page-item ${paginaActual === 1 ? "disabled" : ""}`;
+                prevBtn.innerHTML = `<a class="page-link" href="#">Anterior</a>`;
+                prevBtn.addEventListener("click", () => {
+                    if (paginaActual > 1) {
+                        paginaActual--;
+                        mostrarNoticias();
+                    }
+                });
+                paginacion.appendChild(prevBtn);
+
+                // Números de página
+                for (let i = 1; i <= totalPaginas; i++) {
+                    const pageItem = document.createElement("li");
+                    pageItem.className = `page-item ${paginaActual === i ? "active" : ""}`;
+                    pageItem.innerHTML = `<a class="page-link" href="#">${i}</a>`;
+                    pageItem.addEventListener("click", () => {
+                        paginaActual = i;
+                        mostrarNoticias();
+                    });
+                    paginacion.appendChild(pageItem);
+                }
+
+                // Botón "Siguiente"
+                const nextBtn = document.createElement("li");
+                nextBtn.className = `page-item ${paginaActual === totalPaginas ? "disabled" : ""}`;
+                nextBtn.innerHTML = `<a class="page-link" href="#">Siguiente</a>`;
+                nextBtn.addEventListener("click", () => {
+                    if (paginaActual < totalPaginas) {
+                        paginaActual++;
+                        mostrarNoticias();
+                    }
+                });
+                paginacion.appendChild(nextBtn);
+            }
+
+            mostrarNoticias();
+        });
     </script>
+</head>
+<body>
+
+<div class="container-xxl mt-4">
+    <h2 class="text-center mb-4">Últimas Noticias</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8" id="noticias-container">
+            <!-- Noticias en HTML -->
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 1">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 1</a>
+                    <div class="fecha">25 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 2">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 2</a>
+                    <div class="fecha">24 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 3">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 3</a>
+                    <div class="fecha">23 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 4">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 4</a>
+                    <div class="fecha">22 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 5">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 5</a>
+                    <div class="fecha">21 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <div class="noticia-card">
+                <img src="https://via.placeholder.com/300x200" alt="Imagen Noticia 6">
+                <div class="noticia-texto">
+                    <a href="#">Título de la Noticia 6</a>
+                    <div class="fecha">20 de febrero de 2025</div>
+                </div>
+            </div>
+
+            <!-- Agregar más noticias aquí -->
+
+            <!-- Paginación -->
+            <nav>
+                <ul class="pagination justify-content-center mt-4" id="pagination"></ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
