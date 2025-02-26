@@ -137,76 +137,17 @@
             </div>
         </div>
     </section>
-    <section id="dashboard">
-        <div class="container-lg mt-2" style="border-top: 1px solid #123340;">
-            <div class="row">
-                <h2 class="fw-bold mb-4 text-center sidebar-container hidden slide-left" style="padding-top: 15px">CONOCE PLANDET</h2>
-                <div class="col-12 col-lg-6 mb-4 d-lg-block sidebar-container hidden slide-left">
-                    <div class="d-flex justify-content-center mb-3 border-gradient">
-                        <iframe 
-                            src="https://www.google.com/maps?q=loc:-8.107384986498031,-79.03034909152134&z=17&output=embed" 
-                            width="100%" 
-                            height="300" 
-                            style="border-radius:20px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>                
-                </div>
-                <div class="col-12 col-lg-6 content-contain hidden slide-right" style="padding-left: 50px; padding-right: 50px; margin-bottom: 40px">
-                    <div class="row gy-4">
-                        <div class="col-12 col-lg-12 justifi text-center">
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2;" 
-                            onclick="window.open('https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud', '_blank')">                        
-                            <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
-                            <a href="https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Consulta el estado de tus tramites">
-                                Mesa de partes
-                            </a>
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
-                            onclick="window.open('p_noticias.html', '_blank')">
-                            <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
-                            <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">
-                                Noticias
-                            </a>
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
-                            onclick="window.open('p_equipo.html', '_blank')">
-                            <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
-                            <a href="p_equipo.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Conoce a nuestros miembros">
-                                Equipo
-                            </a>
-                        </div>
-                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
-                            onclick="window.open('http://200.233.44.151:82/visor/', '_blank')">
-                            <i class="fas fa-map me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
-                            <a href="http://200.233.44.151:82/visor/" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Visor MPT">
-                                Visor MPT
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-
-
-
-
-
+<hr>
 
     <div class="container-xxl" style="height: auto; min-height: 500px;">
         <div class="text-center">
-            <h2 class="fw-bold">Subgerencia</h2>
+            <h2 class="pt-5 fw-bold">Subgerencia</h2>
             <p>(PLANDET)</p>
         </div>
         <div>
             <div class="row">
-                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right1" style="height: 430px;">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right1" style="height: 470px;">
                     <div class="flip-container" id="card1">
                         <div class="flipper">
                             <div class="card front">
@@ -223,12 +164,11 @@
                                             datos precisas para proyectos de infraestructura y 
                                             urbanismo.</p>
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
-                                        <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
-                                    </div>
                                 </div>
-                                
+                                <div class="p-3 d-flex justify-content-between">
+                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'tramites1')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold d-block bottom-0 position-relative" onclick="flipCard(event, 'card1', 'servicios1')">Servicios →</a>
+                                </div>
                             </div>
                             <div class="card back p-3" id="tramites1">
                                 <h5 class="fw-bold text-center">Trámites</h5>
@@ -255,15 +195,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right2" style="height: 430px;">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right2" style="height: 470px;">
                     <div class="flip-container" id="card2">
                         <div class="flipper">
                             <div class="card front">
                                 <div class="text-left">
-                                    <img src="pictures/picture-carrusel0001.webp" style="width: 100%;">
+                                    <img src="pictures/picture-carrusel0007.png" style="width: 100%;">
                                 </div>
                                 <div class="p-3">
-                                    <div>
+                                    <div >
                                         <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
                                         <p>Diseña estrategias para el desarrollo sostenible, 
                                             formulando planes y evaluando proyectos. Optimiza 
@@ -271,10 +211,10 @@
                                             con normativas, contribuyendo al crecimiento ordenado 
                                             y al bienestar social.</p>                            
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
-                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
-                                    </div>
+                                </div>
+                                <div class="p-3 d-flex justify-content-between" style="padding-top: 40px !important;">
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
                                 </div>
                             </div>
                             <div class="card back p-3" id="tramites2">
@@ -302,12 +242,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right3" style="height: 430px;">
+                <div class="col-12 col-lg-4 justify-content-center content-contain hidden slide-right3" style="height: 470px;">
                     <div class="flip-container" id="card3">
                         <div class="flipper">
                             <div class="card front">
                                 <div class="text-left">
-                                    <img src="pictures/picture-carrusel0002.webp" style="width: 100%;">
+                                    <img src="pictures/picture-carrusel0008.png" style="width: 100%;">
                                 </div>
                                 <div class="p-3">
                                     <div>
@@ -318,10 +258,11 @@
                                             sociales para validar terrenos y colabora con entidades 
                                             para agilizar los procesos administrativos.</p>
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
-                                        <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
-                                    </div>
+                                    
+                                </div>
+                                <div class="p-3 d-flex justify-content-between">
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'tramites3')">← Trámites</a>
+                                    <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card3', 'servicios3')">Servicios →</a>
                                 </div>
                             </div>
                             <div class="card back p-3" id="tramites3">
@@ -404,9 +345,73 @@
         </div>
     </div>
 
+
+
+
+
+
+
+<hr>
+
+
+
+    <section id="dashboard">
+        <div class="container-lg mt-2">
+            <div class="row">
+                <h2 class="fw-bold mb-4 text-center sidebar-container hidden slide-left" style="padding: 20px">CONOCE PLANDET</h2>
+                <div class="col-12 col-lg-6 mb-4 d-lg-block sidebar-container hidden slide-left">
+                    <div class="d-flex justify-content-center mb-3 border-gradient">
+                        <iframe 
+                            src="https://www.google.com/maps?q=loc:-8.107384986498031,-79.03034909152134&z=17&output=embed" 
+                            width="100%" 
+                            height="300" 
+                            style="border-radius:20px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>                
+                </div>
+                <div class="col-12 col-lg-6 content-contain hidden slide-right" style="padding-left: 50px; padding-right: 50px; margin-bottom: 40px">
+                    <div class="row gy-4">
+                        <div class="col-12 col-lg-12 justifi text-center">
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2;" 
+                            onclick="window.open('https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud', '_blank')">                        
+                            <i class="fas fa-envelope-open-text me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
+                            <a href="https://www.munitrujillo.gob.pe/portal/mesa_virtual/solicitud" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Consulta el estado de tus tramites">
+                                Mesa de partes
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('p_noticias.html', '_blank')">
+                            <i class="fas fa-bullhorn me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
+                            <a href="p_noticias.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Noticias">
+                                Noticias
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('p_equipo.html', '_blank')">
+                            <i class="fas fa-user-tie me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
+                            <a href="p_equipo.html" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Conoce a nuestros miembros">
+                                Equipo
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6 d-flex align-items-center p-3 animated-background clickable" style="border: 5px solid #fff; background-color: #F2F2F2" 
+                            onclick="window.open('http://200.233.44.151:82/visor/', '_blank')">
+                            <i class="fas fa-map me-3" style="font-size: 2rem; color:rgba(255, 255, 255, 0.72);"></i>
+                            <a href="http://200.233.44.151:82/visor/" target="_blank" class="fw-bold text-decoration-none custom-text-green" title="Visor MPT">
+                                Visor MPT
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <style>
 
-        
+
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -424,7 +429,7 @@
             min-height: 400px; /* Para que todas las caras tengan la misma altura */
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: flex-start;
         }
 
 
