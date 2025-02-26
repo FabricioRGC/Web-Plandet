@@ -426,7 +426,7 @@
         }
 
         .card {
-            min-height: 400px; /* Para que todas las caras tengan la misma altura */
+            min-height: 450px; /* Para que todas las caras tengan la misma altura */
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -478,7 +478,8 @@
         }
         .btn-outline-custom {
             border-color: #4B8976 !important;
-            color: #4B8976 !important;
+            background-color:rgb(219, 231, 228);
+            color:rgb(32, 94, 75) !important;
         }
         .btn-outline-custom:hover {
             background-color: #4B8976 !important;
