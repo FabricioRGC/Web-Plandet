@@ -57,23 +57,31 @@
                     <div class="carousel-inner w-100 h-100">
                         <div class="carousel-item active w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0001.jpeg');">
-                                <div class="card2-body custom-pos slide-top">
+                                <div class="card2-body2 custom-pos slide-top">
                                     <img src="pictures/LOGO_PLANDET_OK-white-2.png" alt="Logo" class="img-fluid">
                                 </div>
                             </div>
                         </div>
+
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0002.jpeg');">
-                                <div class="card2-body custom-pos slide-left">
+                                <div class="card2-body2 custom-pos slide-left">
+                                    <h1 class="headlines none">
+                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">
+                                            <img src="pictures/card2.png" alt="Logo" class="img-fluid">
+                                        </a>
+                                    </h1>
+                                </div>
+                                <div class="card2-body mostrar" style="padding-bottom: 50px">
                                     <h1 class="headlines">
-                                        <a href="https://www.gob.pe/munitrujillo" target="_blank">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
+                                        <a href="https://www.msn.com/en-xl/lifestyle/shopping/mushroom-shaped-earbuds-based-on-popular-japanese-kinoko-no-yama-snacks-to-go-on-sale/ar-AA1k8r98?ocid=msedgdhp&pc=U531&cvid=029498f338fe4366b71cea0c21a3a9a2&ei=219">Impulsar proyectos ambientales, incluyendo la reforestación urbana y la gestión eficiente de las distintas áreas.</a>
                                     </h1>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture0003.jpeg');">
-                                <div class="card2-body custom-pos slide-right">
+                                <div class="card2-body2 custom-pos slide-right">
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Firma de Titulos de propiedad por parte de las familias formalizadas en Alto Trujillo.</a>
                                     </h1>
@@ -82,7 +90,7 @@
                         </div>
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0001.jpeg');">
-                                <div class="card2-body custom-pos slide-bottom">
+                                <div class="card2-body2 custom-pos slide-bottom">
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Descubre mas sobre nosotros.</a>
                                     </h1>
@@ -91,7 +99,7 @@
                         </div>
                         <div class="carousel-item w-100 h-100">
                             <div  class="h-100 text-light news card2 d-flex flex-row justify-content-center align-items-end bg-image" style="background-image: url('pictures/picture-carrusel0002.jpeg');">
-                                <div class="card2-body custom-pos slide-bottom-right">
+                                <div class="card2-body2 custom-pos slide-bottom-right">
                                     <h1 class="headlines">
                                         <a href="https://www.gob.pe/munitrujillo" target="_blank">Estamos en Av. España 793, Trujillo 13001.</a>
                                     </h1>
@@ -172,7 +180,7 @@
     position: relative;  /* Asegura que z-index funcione */
     z-index: 20;  /* Mayor que el de .hover-effect */
     background-color: white; /* Asegura que no se mezcle con el fondo */
-    padding: 15px;
+    padding: 10px;
 }
 
 
@@ -282,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                             y al bienestar social.</p>                            
                                     </div>
                                 </div>
-                                <div class="p-3 d-flex justify-content-between" style="padding-top: 40px !important;">
+                                <div class="p-3 d-flex justify-content-between">
                                     <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'tramites2')">← Trámites</a>
                                     <a href="#" class="text-custom fw-bold" onclick="flipCard(event, 'card2', 'servicios2')">Servicios →</a>
                                 </div>

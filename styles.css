@@ -66,20 +66,45 @@
     mix-blend-mode: multiply;
 }
 
-.card2-body {
+.card2-body2 {
     width: 600px;
     position: absolute;
     z-index: 3;
 }
+.card2-body {
+    position: absolute;
+    z-index: 3;
+}
 
-.card2-body img {
-    width: 350px; /* Ajusta el tamaño según necesites */
+
+
+
+.mostrar{
+    display: none;
+}
+@media (max-width: 600px) {
+    .none {
+        display: none;
+    }
+    .mostrar{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+.card2-body2 img {
+    width: 550px; /* Ajusta el tamaño según necesites */
     height: auto;
 }
 
-.card2-body.custom-pos {
-    top: 20%; /* Modifica esta propiedad para mover el texto */
-    left: 5%;
+.card2-body2.custom-pos {
+    top: 70%; /* Modifica esta propiedad para mover el texto */
+    left: center;
     transform: translate(0, 0); /* Desactiva el centrado automático */
 }
 
@@ -144,23 +169,23 @@
 }
 
 /* Aplicar las animaciones a cada card */
-.card2-body.slide-top {
+.card2-body2.slide-top {
     animation: slideInTop 2.6s ease-out;
 }
 
-.card2-body.slide-left {
+.card2-body2.slide-left {
     animation: slideInLeft 2.6s ease-out;
 }
 
-.card2-body.slide-right {
+.card2-body2.slide-right {
     animation: slideInRight 2.6s ease-out;
 }
 
-.card2-body.slide-bottom {
+.card2-body2.slide-bottom {
     animation: slideInBottom 2.6s ease-out;
 }
 
-.card2-body.slide-bottom-right {
+.card2-body2.slide-bottom-right {
     animation: slideInBottomRight 2.6s ease-out;
 }
 
