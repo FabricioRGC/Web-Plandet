@@ -140,13 +140,13 @@
 
 <hr>
 <style>
-@keyframes slideInRight {
+@keyframes slideInBottom {
     0% {
-        transform: translateX(100%);
+        transform: translateY(100%);
         opacity: 0;
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -155,14 +155,23 @@
     position: absolute;
     left: 0;
     top: 0%;
-    transform: translateY(-50%) translateX(100%);
+    transform: translateY(-50%) translateX(10px);
     opacity: 0;
     visibility: hidden;
+    z-index: 10px;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
 
 .card.front .card:hover + .hover-effect {
     visibility: visible;
-    animation: slideInRight 0.3s ease-out forwards;
+    animation: slideInBottom 0.3s ease-out forwards;
+}
+
+.card-content {
+    position: relative;  /* Asegura que z-index funcione */
+    z-index: 20;  /* Mayor que el de .hover-effect */
+    background-color: white; /* Asegura que no se mezcle con el fondo */
+    padding: 15px;
 }
 
 
@@ -180,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (hoverEffect) {
             title.addEventListener("mouseover", function () {
                 hoverEffect.style.visibility = "visible";
-                hoverEffect.style.animation = "slideInRight 0.3s ease-out forwards";
+                hoverEffect.style.animation = "slideInBottom 0.3s ease-out forwards";
             });
 
             title.addEventListener("mouseleave", function () {
@@ -211,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <img src="pictures/picture-carrusel0012.png" alt="Logo" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="p-3">
+                                <div class="p-3 card-content">
                                     <div>
                                         <h5 class="fw-bold text-left ">Subgerencia Geomática</h5>
                                         <p>Gestiona y analiza información geoespacial con SIG, 
@@ -262,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <img src="pictures/picture-carrusel0013.png" alt="Logo" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="p-3">
+                                <div class="p-3 card-content">
                                     <div >
                                         <h5 class="fw-bold text-left ">Subgerencia Planificación</h5>
                                         <p>Diseña estrategias para el desarrollo sostenible, 
@@ -312,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <img src="pictures/picture-carrusel0014.png" alt="Logo" class="img-fluid">
                                     </div>
                                 </div>
-                                <div class="p-3">
+                                <div class="p-3 card-content">
                                     <div>
                                         <h5 class="fw-bold text-left ">Subgerencia Titulación</h5>
                                         <p>Se encarga de regularizar y formalizar la propiedad 
