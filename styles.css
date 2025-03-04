@@ -104,7 +104,7 @@
 
 .card2-body2.custom-pos {
     top: 70%; /* Modifica esta propiedad para mover el texto */
-    left: ceneter;
+    left: center;
     transform: translate(0, 0); /* Desactiva el centrado automático */
 }
 
